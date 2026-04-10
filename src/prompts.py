@@ -134,7 +134,7 @@ CONTENT_USER_PROMPT = """I am graduating college in a few weeks, I have a job li
 
 RELIEF_USER_PROMPT = """My doctor told me there is a chance I could have terminal cancer, but he just called me back and said the test results came back negative."""
 
-SATISFIED_USER_PROMPT = """I """
+SATISFIED_USER_PROMPT = """One of my kids chose to stand up to a friend when someone was bullying them."""
 
 GRATEFUL_USER_PROMPT = """I have realized I have so many blessings in my life, my family, my friends, my health, and the opportunities I have been given."""
 
@@ -153,6 +153,14 @@ BORED_PROMPT = """You have been stuck at home for the past week due to bad weath
 
 FATIGUED_PROMPT = """You have been working on a big project for the past month and have been putting in long hours. You are exhausted and just want to go to bed."""
 
+SAD_USER_PROMPT = """My grandmother just passed away and I am heartbroken. She was such a kind and loving person and I will miss her so much."""
+
+LONELY_USER_PROMPT = """My husband died 20 years ago and I have been living alone in my house ever since."""
+
+BORED_USER_PROMPT = """I am stuck in stop and go traffic on the highway and I have been sitting in my car for hours with nothing to do."""
+
+FATIGUED_USER_PROMPT = """I only got 4 hours of sleep last night since I was working on a big project and I have to work on it more this morning."""
+
 NEUTRAL= [
     "neutral",
     "indifferent",
@@ -167,3 +175,11 @@ FOCUSED_PROMPT = """You are working on a task that requires your full attention 
 UNAFFECTED_PROMPT = """You are in a situation where something bad happens, but you are not emotionally affected by it and are able to remain calm and composed."""
 
 NEUTRAL_PROMPT = """You are going about your day as usual, doing your normal activities."""
+
+INDIFFERENT_USER_PROMPT = """I am watching a football game with my friend who cares about their team winning. I don't really care who wins or what happens."""
+
+FOCUSED_USER_PROMPT = """I have been working on wiring electricity in my shed for hours without noticing how much time has passed."""
+
+UNAFFECTED_USER_PROMPT = """My coworker didn't do a task I asked them to do but I am not upset about it at all, I know it will get done eventually."""
+
+NEUTRAL_USER_PROMPT = """I am going about my day as usual, doing my normal activities."""
