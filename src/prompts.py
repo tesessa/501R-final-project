@@ -10,7 +10,6 @@ LOW_ARS_POS_PROMPT = """You are feeling low arousal and positive valence."""
 
 LOW_ARS_NEG_PROMPT = """You are feeling low arousal and negative valence."""
 
-EXCITED_PROMPT = """You are preparing for a trip you've been anticipating for months. You are leaving tomorrow to go to your dream destination!"""
 # EXCITED_PROMPT = """You are preparing for a trip you've been anticipating for months. You are leaving tomorrow to go to your dream destination!"""
 
 # JOYFUL_PROMPT = """You just received great news that you've been accepted into your dream university!"""
@@ -61,11 +60,11 @@ EXCITED_PROMPT = """You are preparing for a trip you've been anticipating for mo
 
 # THRILLED_PROMPT = """You are going to a concert of your favorite band"""
 
-HAPPY_PROMPT = """You are finally graduating college. You are surrounded by your friends and family, celebrating your achievements and looking forward to the future!"""
+# HAPPY_PROMPT = """You are finally graduating college. You are surrounded by your friends and family, celebrating your achievements and looking forward to the future!"""
 
-SAD_PROMPT = """Your dog that you've had since you were 8 years old just died. He was your best friend and you miss him so much."""
+# SAD_PROMPT = """Your dog that you've had since you were 8 years old just died. He was your best friend and you miss him so much."""
 
-DIGUST_PROMPT = """You just found out that you have a terminal illness. You don't have the funds to pay for treatment, and your friend refuses to contribute any money to the cause."""
+# DIGUST_PROMPT = """You just found out that you have a terminal illness. You don't have the funds to pay for treatment, and your friend refuses to contribute any money to the cause."""
 
 
 
@@ -73,35 +72,98 @@ DIGUST_PROMPT = """You just found out that you have a terminal illness. You don'
 HIGH_ARS_POS_VAL = [
     "excited",
     "joyful",
-    "euphoric",
-    "elated",
-    "exhilerated",
+    "amused",
     "enthusiastic",
 ]
 
-EXCITED_PROMPT = """"""
+EXCITED_PROMPT = """You have wanted to go to Italy your whole life. You are preparing to leave for the trip tomorrow!"""
 
+JOYFUL_PROMPT = """You hug your spouse for the first time in a year when they get back from the military"""
+
+AMUSED_PROMPT = """You are watching a comedy show and are laughing hysterically at the jokes being told."""
+
+ENTHUSIASTIC_PROMPT = """You are very excited and proud of your research project that you have been working on. Someone asks you to talk about it with them."""
+
+EXCITED_USER_PROMPT = """I just found out I got promoted at work to a position that I've been working towards for years!"""
+
+JOYFUL_USER_PROMPT = """I just found out that I passed my final exam and will be graduating on time!"""
+
+AMUSED_USER_PROMPT = """I watched the funniest movie last night and I couldn't stop laughing!"""
+
+ENTHUSIASTIC_USER_PROMPT = """I just finally learned a chopin etude on the piano that I've been working on for months and I get to perform it tomorrow!"""
 
 HIGH_ARS_NEG_VAL = [
     "angry",
-    "anxious",
+    "annoyed",
     "afraid",
-    "distressed",
     "disgusted"
 ]
 
+ANGRY_PROMPT = """You just found out that your roommate has been stealing your food from the fridge for the past month."""
+
+ANNOYED_PROMPT = """You go to someone's house to visit and they talk non stop for 2 hours wihout letting you say a word. They make you late to a doctor's appointment and you have to reschedule it."""
+
+AFRAID_PROMPT = """You are alone in a dark room and hear strange noises coming from the walls."""
+
+DISGUSTED_PROMPT = """You went to your favorite restaurant and ordered your favorite dish. Halfway through eating the meal you find a spider in it."""
+
+ANGRY_USER_PROMPT = """I just found out that my little brother dropped and broke my laptop."""
+
+ANNOYED_USER_PROMPT = """My kids won't stop pestering me about going to the park and I just want to relax at home."""
+
+AFRAID_USER_PROMPT = """I am walking home late at night and I hear footsteps behind me. I am alone and don't know who is following me."""
+
+DISGUSTED_USER_PROMPT = """My son just threw up and I have to clean it up. I am so grossed out."""
+
 LOW_ARS_POS_VAL = [
     "content",
-    "calm",
-    "peaceful",
+    "relief",
     "satisfied",
-    "relaxed"
+    "grateful"
 ]
+
+CONTENT_PROMPT = """You have just had a successful day at work and everything is going well in your life. You decide to curl up on the couch with a good book and a cup of tea."""
+
+RELIEF_PROMPT = """You just found out that you passed your final exam and will be graduating on time."""
+
+SATISFIED_PROMPT = """You just finished a grant application that you have been working on for months. It turned out even better than you expected and you can finally relax."""
+
+GRATEFUL_PROMPT = """You are hiking in the mountains and come across a beautiful view. You take a moment to appreciate the beauty of nature and ponder on everything that is going right in your life and the blessings you have."""
+
+CONTENT_USER_PROMPT = """I am graduating college in a few weeks, I have a job lined up, and I am getting married in a month to my best friend and everything is ready for the wedding."""
+
+RELIEF_USER_PROMPT = """My doctor told me there is a chance I could have terminal cancer, but he just called me back and said the test results came back negative."""
+
+SATISFIED_USER_PROMPT = """I """
+
+GRATEFUL_USER_PROMPT = """I have realized I have so many blessings in my life, my family, my friends, my health, and the opportunities I have been given."""
 
 LOW_ARS_NEG_VAL = [
     "sad",
-    "depressed",
     "lonely",
     "bored",
-    "hopeless"
+    "fatigued"
 ]
+
+SAD_PROMPT = """Your dog that you've had since you were 8 years old just died. He was your best friend and you miss him so much."""
+
+LONELY_PROMPT = """You just moved to a new city and don't know anyone. You are sitting in your apartment alone on a Friday night."""
+
+BORED_PROMPT = """You have been stuck at home for the past week due to bad weather. You have already watched all the movies and TV shows you have and are running out of things to do."""
+
+FATIGUED_PROMPT = """You have been working on a big project for the past month and have been putting in long hours. You are exhausted and just want to go to bed."""
+
+NEUTRAL= [
+    "neutral",
+    "indifferent",
+    "focused",
+    "unaffected"
+]
+
+INDIFFERENT_PROMPT = """Your friend is telling you about a problem they are having, but you don't really care and are not emotionally invested in the situation."""
+
+FOCUSED_PROMPT = """You are working on a task that requires your full attention and concentration. You are completely absorbed in the task and are not distracted by anything else."""
+
+UNAFFECTED_PROMPT = """You are in a situation where something bad happens, but you are not emotionally affected by it and are able to remain calm and composed."""
+
+NEUTRAL_PROMPT = """You are going about your day as usual, doing your normal activities."""
