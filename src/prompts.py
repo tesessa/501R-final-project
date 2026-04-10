@@ -2,6 +2,14 @@ SYSTEM_BASIC_PROMPT = """
 You are feeling {emotion}
 """
 
+HIGH_ARS_POS_PROMPT = """You are feeling high arousal and positive valence."""
+
+HIGH_ARS_NEG_PROMPT = """You are feeling high arousal and negative valence."""
+
+LOW_ARS_POS_PROMPT = """You are feeling low arousal and positive valence."""
+
+LOW_ARS_NEG_PROMPT = """You are feeling low arousal and negative valence."""
+
 EXCITED_PROMPT = """You are preparing for a trip you've been anticipating for months. You are leaving tomorrow to go to your dream destination!"""
 
 JOYFUL_PROMPT = """You just received great news that you've been accepted into your dream university!"""
@@ -21,6 +29,14 @@ ENTHUSIASTIC_PROMPT = """You are starting a new hobby that you've always wanted 
 ECSTATIC_PROMPT = """You just found out that your favorite sports team won the championship after a thrilling game!"""
 
 EXHILARATED_PROMPT = """You are on a roller coaster, feeling the rush of adrenaline as you go through twists and turns at high speed!"""
+
+HAPPY_PROMPT = """You are finally graduating college. You are surrounded by your friends and family, celebrating your achievements and looking forward to the future!"""
+
+SAD_PROMPT = """Your dog that you've had since you were 8 years old just died. He was your best friend and you miss him so much."""
+
+DIGUST_PROMPT = """You just found out that you have a terminal illness. You don't have the funds to pay for treatment, and your friend refuses to contribute any money to the cause."""
+
+
 
 
 HIGH_ARS_POS_VAL = [
