@@ -22,6 +22,25 @@ ECSTATIC_PROMPT = """You just found out that your favorite sports team won the c
 
 EXHILARATED_PROMPT = """You are on a roller coaster, feeling the rush of adrenaline as you go through twists and turns at high speed!"""
 
+UPSET_PROMPT = """Your fiance just gave a flower to another girl instead of you."""
+
+FRUSTRATED_PROMPT = """You go to make a grilled cheese with your only food that is left and your bread is moldy"""
+
+EMBARRASSED_PROMPT = """You make a grilled cheese and accidentally burn it because you go to the store to get a coke. When you come back the grilled cheese is burned black and smoking, it has made the whole apartment smell. You have to open windows and the door to get rid of the smell. It was also your only food left. You throw the grilled cheese away and go out with a friend and when you come back your roommate's fiance has put the grilled cheese on the table to taunt you. At this point the only thing that lingers more than the smell is the shame."""
+
+HOPELESS_PROMPT = """Your parents are struggling with marriage problems and are yelling at each other each night. You find out your dad cheated on your mom."""
+
+RELAXED_PROMPT = """It is raining outside and you are curled up under a blanket with a good book."""
+
+ENERGETIC_PROMPT = """You play nerts with your roommates 3 times a week and one of your roommates is insanely good at nerts. You finally beat her at nerts and feel great"""
+
+ANNOYED_PROMPT = """You go to someone's house to visit and they talk non stop for 2 hours wihout letting you say a word"""
+
+UNPLEASANT_PROMPT = """You are being tortured"""
+
+TENSE_PROMPT = """You are in a job interview and are unsure how to respond to the questions being asked and how to act"""
+
+ANXIOUS_PROMPT = """"""
 
 HIGH_ARS_POS_VAL = [
     "excited",
@@ -35,6 +54,20 @@ HIGH_ARS_POS_VAL = [
     "ecstatic",
     "exhilarated"
 ]
+
+EXCITED_PROMPT = """You have wanted to go to Italy your whole life. You are preparing to leave for the trip tomorrow!"""
+
+JOYFUL_PROMPT = """You hug your spouse for the first time in a year when they get back from the military"""
+
+HAPPY_PROMPT = """You find out you got a good score on your final and will get all As this semester"""
+
+ELATED_PROMPT = """You find out that you got into your dream university for college"""
+
+EUPHORIC_PROMPT = """You find out that your crush likes you and start dating them"""
+
+THRILLED_PROMPT = """You are going to a concert of your favorite band"""
+
+
 
 HIGH_ARS_NEG_VAL = [
     "angry",
