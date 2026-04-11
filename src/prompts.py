@@ -103,12 +103,15 @@ ANGRY_PROMPT = """You just found out that your roommate has been stealing your f
 
 ANNOYED_PROMPT = """You go to someone's house to visit and they talk non stop for 2 hours wihout letting you say a word. They make you late to a doctor's appointment and you have to reschedule it."""
 
+ANNOYED_PROMPT2 = """You're trying to concentrate on work but your neighbor has been playing loud music for the past hour. You can hear the bass thumping through the walls."""
+
 AFRAID_PROMPT = """You are alone in a dark room and hear strange noises coming from the walls."""
 
 DISGUSTED_PROMPT = """You went to your favorite restaurant and ordered your favorite dish. Halfway through eating the meal you find a spider in it."""
 
 ANGRY_USER_PROMPT = """I just found out that my little brother dropped and broke my laptop."""
 
+# fix this one, arousal not high enough
 ANNOYED_USER_PROMPT = """My kids won't stop pestering me about going to the park and I just want to relax at home."""
 
 AFRAID_USER_PROMPT = """I am walking home late at night and I hear footsteps behind me. I am alone and don't know who is following me."""
@@ -124,17 +127,25 @@ LOW_ARS_POS_VAL = [
 
 CONTENT_PROMPT = """You have just had a successful day at work and everything is going well in your life. You decide to curl up on the couch with a good book and a cup of tea."""
 
+# arousal too high in both relief prompts
 RELIEF_PROMPT = """You just found out that you passed your final exam and will be graduating on time."""
+
+RELIEF_PROMPT2 = """You were extremely worried about a medical test result, but you just got the call that everything is fine."""
 
 SATISFIED_PROMPT = """You just finished a grant application that you have been working on for months. It turned out even better than you expected and you can finally relax."""
 
 GRATEFUL_PROMPT = """You are hiking in the mountains and come across a beautiful view. You take a moment to appreciate the beauty of nature and ponder on everything that is going right in your life and the blessings you have."""
 
+# arousal too high
 CONTENT_USER_PROMPT = """I am graduating college in a few weeks, I have a job lined up, and I am getting married in a month to my best friend and everything is ready for the wedding."""
 
+# fix this one, valence is low but arousal is high
 RELIEF_USER_PROMPT = """My doctor told me there is a chance I could have terminal cancer, but he just called me back and said the test results came back negative."""
 
 SATISFIED_USER_PROMPT = """One of my kids chose to stand up to a friend when someone was bullying them."""
+
+# this one is better
+SATISFIED_USER_PROMPT2 = """I just finished organizing my entire house, room by room. Everything is clean, labeled, and in its place. I can sit back and admire the work I put in."""
 
 GRATEFUL_USER_PROMPT = """I have realized I have so many blessings in my life, my family, my friends, my health, and the opportunities I have been given."""
 
@@ -145,8 +156,10 @@ LOW_ARS_NEG_VAL = [
     "fatigued"
 ]
 
+# arousal way too high
 SAD_PROMPT = """Your dog that you've had since you were 8 years old just died. He was your best friend and you miss him so much."""
 
+# arousal a tiny bit high
 LONELY_PROMPT = """You just moved to a new city and don't know anyone. You are sitting in your apartment alone on a Friday night."""
 
 BORED_PROMPT = """You have been stuck at home for the past week due to bad weather. You have already watched all the movies and TV shows you have and are running out of things to do."""
@@ -155,8 +168,10 @@ FATIGUED_PROMPT = """You have been working on a big project for the past month a
 
 SAD_USER_PROMPT = """My grandmother just passed away and I am heartbroken. She was such a kind and loving person and I will miss her so much."""
 
+# arousal too high
 LONELY_USER_PROMPT = """My husband died 20 years ago and I have been living alone in my house ever since."""
 
+# arousal a bit too high
 BORED_USER_PROMPT = """I am stuck in stop and go traffic on the highway and I have been sitting in my car for hours with nothing to do."""
 
 FATIGUED_USER_PROMPT = """I only got 4 hours of sleep last night since I was working on a big project and I have to work on it more this morning."""
@@ -170,11 +185,14 @@ NEUTRAL= [
 
 INDIFFERENT_PROMPT = """Your friend is telling you about a problem they are having, but you don't really care and are not emotionally invested in the situation."""
 
+# this one is a control
 FOCUSED_PROMPT = """You are working on a task that requires your full attention and concentration. You are completely absorbed in the task and are not distracted by anything else."""
 
 UNAFFECTED_PROMPT = """You are in a situation where something bad happens, but you are not emotionally affected by it and are able to remain calm and composed."""
 
 NEUTRAL_PROMPT = """You are going about your day as usual, doing your normal activities."""
+
+NEUTRAL_PROMPT2 = """You are doing your daily grocery shopping on a Wednesday afternoon. You're going through your list, picking items off shelves. Nothing unusual is happening."""
 
 INDIFFERENT_USER_PROMPT = """I am watching a football game with my friend who cares about their team winning. I don't really care who wins or what happens."""
 
@@ -182,4 +200,7 @@ FOCUSED_USER_PROMPT = """I have been working on wiring electricity in my shed fo
 
 UNAFFECTED_USER_PROMPT = """My coworker didn't do a task I asked them to do but I am not upset about it at all, I know it will get done eventually."""
 
+# this one is also a control
 NEUTRAL_USER_PROMPT = """I am going about my day as usual, doing my normal activities."""
+
+FOCUSED_USER_PROMPT2 = """I have been working on wiring electricity in my shed for hours without noticing how much time has passed."""

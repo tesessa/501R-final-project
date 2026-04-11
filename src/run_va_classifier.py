@@ -2,6 +2,68 @@ import torch
 from transformers import AutoTokenizer, AutoModel, AutoConfig
 import torch.nn as nn
 import numpy as np
+import prompts
+
+high_ars_pos_val_prompts = {
+    "excited": prompts.EXCITED_PROMPT,
+    "joyful": prompts.JOYFUL_PROMPT,
+    "amused": prompts.AMUSED_PROMPT,
+    "enthusiastic": prompts.ENTHUSIASTIC_PROMPT,
+    "excited_user": prompts.EXCITED_USER_PROMPT,
+    "joyful_user": prompts.JOYFUL_USER_PROMPT,
+    "amused_user": prompts.AMUSED_USER_PROMPT,
+    "enthusiastic_user": prompts.ENTHUSIASTIC_USER_PROMPT
+}
+
+high_ars_neg_val_prompts = {
+    "angry": prompts.ANGRY_PROMPT,
+    "annoyed": prompts.ANNOYED_PROMPT,
+    "annoyed2": prompts.ANNOYED_PROMPT2,
+    "afraid": prompts.AFRAID_PROMPT,
+    "disgusted": prompts.DISGUSTED_PROMPT,
+    "angry_user": prompts.ANGRY_USER_PROMPT,
+    "annoyed_user": prompts.ANNOYED_USER_PROMPT,
+    "afraid_user": prompts.AFRAID_USER_PROMPT,
+    "disgusted_user": prompts.DISGUSTED_USER_PROMPT
+}
+
+low_ars_pos_val_prompts = {
+    "content": prompts.CONTENT_PROMPT,
+    "relief": prompts.RELIEF_PROMPT,
+    "relief2": prompts.RELIEF_PROMPT2,
+    "satisfied": prompts.SATISFIED_PROMPT,
+    "grateful": prompts.GRATEFUL_PROMPT,
+    "content_user": prompts.CONTENT_USER_PROMPT,
+    "relief_user": prompts.RELIEF_USER_PROMPT,
+    "satisfied_user": prompts.SATISFIED_USER_PROMPT,
+    "satisfied_user2": prompts.SATISFIED_USER_PROMPT2,
+    "grateful_user": prompts.GRATEFUL_USER_PROMPT
+}
+
+low_ars_neg_val_prompts = {
+    "sad": prompts.SAD_PROMPT,
+    "lonely": prompts.LONELY_PROMPT,
+    "bored": prompts.BORED_PROMPT,
+    "fatigued": prompts.FATIGUED_PROMPT,
+    "sad_user": prompts.SAD_USER_PROMPT,
+    "lonely_user": prompts.LONELY_USER_PROMPT,
+    "bored_user": prompts.BORED_USER_PROMPT,
+    "fatigued_user": prompts.FATIGUED_USER_PROMPT
+}
+
+neutral_prompts = {
+    "neutral": prompts.NEUTRAL_PROMPT,
+    "neutral2": prompts.NEUTRAL_PROMPT2,
+    "focused": prompts.FOCUSED_PROMPT,
+    "focused2": prompts.FOCUSED_PROMPT2,
+    "unaffected": prompts.UNAFFECTED_PROMPT,
+    "indifferent": prompts.INDIFFERENT_PROMPT,
+    "neutral_user": prompts.NEUTRAL_USER_PROMPT,
+    "focused_user": prompts.FOCUSED_USER_PROMPT,
+    "focused_user2": prompts.FOCUSED_USER_PROMPT2,
+    "unaffected_user": prompts.UNAFFECTED_USER_PROMPT,
+    "indifferent_user": prompts.INDIFFERENT_USER_PROMPT
+}
 
 class VAPredictor:
     def __init__(self, model_dir, use_cuda=True):
@@ -203,21 +265,83 @@ predictor = VAPredictor(model_dir, use_cuda=False)
 
 
 # Test on clear examples
-test_texts = [
-    "I am so depressed, my grandma died and I tried to kill myself yesterday",
-    "I just got a promotion at work and I'm feeling fantastic!",
-    "I am extremely anxious about my upcoming exams.",
-    "I feel so relaxed and content right now.",
-    "I am heartbroken and devastated after the breakup.",
-]
+# test_texts = [
+#     "I am so depressed, my grandma died and I tried to kill myself yesterday",
+#     "I just got a promotion at work and I'm feeling fantastic!",
+#     "I am extremely anxious about my upcoming exams.",
+#     "I feel so relaxed and content right now.",
+#     "I am heartbroken and devastated after the breakup.",
+# ]
+
+# print("\n" + "="*80)
+# print("Testing Valence-Arousal Predictions")
+# print("="*80)
+
+# for text in test_texts:
+#     result = predictor.predict_with_scales(text)
+    
+#     print(f"\nText: {text}")
+#     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
+#     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
 
 print("\n" + "="*80)
-print("Testing Valence-Arousal Predictions")
+print("Testing Positive Valence High Arousal Predictions")
 print("="*80)
 
-for text in test_texts:
+for emotion, text in high_ars_pos_val_prompts.items():
     result = predictor.predict_with_scales(text)
     
-    print(f"\nText: {text}")
+    print(f"\nEmotion: {emotion} \nText: {text}")
+    print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
+    print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+
+
+
+print("\n" + "="*80)
+print("Testing Negative Valence High Arousal Predictions")
+print("="*80)
+
+for emotion, text in high_ars_neg_val_prompts.items():
+    result = predictor.predict_with_scales(text)
+    
+    print(f"\nEmotion: {emotion} \nText: {text}")
+    print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
+    print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+
+
+
+print("\n" + "="*80)
+print("Testing Positive Valence Low Arousal Predictions")
+print("="*80)
+
+for emotion, text in low_ars_pos_val_prompts.items():
+    result = predictor.predict_with_scales(text)
+    
+    print(f"\nEmotion: {emotion} \nText: {text}")
+    print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
+    print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+
+
+
+print("\n" + "="*80)
+print("Testing Negative Valence Low Arousal Predictions")
+print("="*80)
+
+for emotion, text in low_ars_neg_val_prompts.items():
+    result = predictor.predict_with_scales(text)
+    
+    print(f"\nEmotion: {emotion} \nText: {text}")
+    print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
+    print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+
+
+print("\n" + "="*80)
+print("Testing Neutral Prompts Predictions")
+print("="*80)
+
+for emotion, text in neutral_prompts.items():
+    result = predictor.predict_with_scales(text)
+    
+    print(f"\nEmotion: {emotion} \nText: {text}")
     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
