@@ -1,2 +1,4 @@
 # 501R-final-project
 A repo for my final project in 501R
+
+For experiments I developed prompts of varying levels of valence and arousal. To test that my prompts were robust I used a trained XLM-RoBERTa-large model from [Quantifying Valence and Arousal in Text with Multilingual Pre-trained Transformers](https://github.com/gmendes9/multilingual_va_prediction). To run this model classification to test your prompts you can download the model [here](https://drive.google.com/drive/folders/1BzdVmN51f33NHrdemJajz67MmlZljB2J) and put it in a directory. Connect that directory to the `run_va_classifier.py` and run it.
