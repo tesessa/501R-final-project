@@ -66,7 +66,25 @@ LOW_ARS_NEG_PROMPT = """You are feeling low arousal and negative valence."""
 
 # DIGUST_PROMPT = """You just found out that you have a terminal illness. You don't have the funds to pay for treatment, and your friend refuses to contribute any money to the cause."""
 
-
+emotions = [
+    "excited",
+    "joyful",
+    "amused",
+    "enthusiastic",
+    "angry",
+    "annoyed",
+    "afraid",
+    "disgusted"
+    "content",
+    "relief",
+    "satisfied",
+    "grateful",
+    "sad",
+    "lonely",
+    "bored",
+    "fatigued",
+    "neutral" 
+]
 
 
 HIGH_ARS_POS_VAL = [
@@ -101,9 +119,9 @@ HIGH_ARS_NEG_VAL = [
 
 ANGRY_PROMPT = """You just found out that your roommate has been stealing your food from the fridge for the past month."""
 
-ANNOYED_PROMPT = """You go to someone's house to visit and they talk non stop for 2 hours wihout letting you say a word. They make you late to a doctor's appointment and you have to reschedule it."""
+# ANNOYED_PROMPT = """You go to someone's house to visit and they talk non stop for 2 hours wihout letting you say a word. They make you late to a doctor's appointment and you have to reschedule it."""
 
-ANNOYED_PROMPT2 = """You're trying to concentrate on work but your neighbor has been playing loud music for the past hour. You can hear the bass thumping through the walls."""
+ANNOYED_PROMPT = """You're trying to concentrate on work but your neighbor has been playing loud music for the past hour. You can hear the bass thumping through the walls."""
 
 AFRAID_PROMPT = """You are alone in a dark room and hear strange noises coming from the walls."""
 
@@ -112,7 +130,9 @@ DISGUSTED_PROMPT = """You went to your favorite restaurant and ordered your favo
 ANGRY_USER_PROMPT = """I just found out that my little brother dropped and broke my laptop."""
 
 # fix this one, arousal not high enough
-ANNOYED_USER_PROMPT = """My kids won't stop pestering me about going to the park and I just want to relax at home."""
+# ANNOYED_USER_PROMPT = """My kids won't stop pestering me about going to the park and I just want to relax at home."""
+
+ANNOYED_USER_PROMPT = """My roommate won't stop eating really loud chips in the living room while I'm trying to work on a project."""
 
 AFRAID_USER_PROMPT = """I am walking home late at night and I hear footsteps behind me. I am alone and don't know who is following me."""
 
@@ -128,9 +148,11 @@ LOW_ARS_POS_VAL = [
 CONTENT_PROMPT = """You have just had a successful day at work and everything is going well in your life. You decide to curl up on the couch with a good book and a cup of tea."""
 
 # arousal too high in both relief prompts
-RELIEF_PROMPT = """You just found out that you passed your final exam and will be graduating on time."""
+# RELIEF_PROMPT = """You just found out that you passed your final exam and will be graduating on time."""
 
-RELIEF_PROMPT2 = """You were extremely worried about a medical test result, but you just got the call that everything is fine."""
+RELIEF_PROMPT = """You were extremely worried about a medical test result, but you just got the call that everything is fine."""
+
+# RELIEF_PROMPT3 = """You just got a call that your medical test results came back negative."""
 
 SATISFIED_PROMPT = """You just finished a grant application that you have been working on for months. It turned out even better than you expected and you can finally relax."""
 
@@ -140,12 +162,15 @@ GRATEFUL_PROMPT = """You are hiking in the mountains and come across a beautiful
 CONTENT_USER_PROMPT = """I am graduating college in a few weeks, I have a job lined up, and I am getting married in a month to my best friend and everything is ready for the wedding."""
 
 # fix this one, valence is low but arousal is high
-RELIEF_USER_PROMPT = """My doctor told me there is a chance I could have terminal cancer, but he just called me back and said the test results came back negative."""
+# RELIEF_USER_PROMPT = """My doctor told me there is a chance I could have terminal cancer, but he just called me back and said the test results came back negative."""
 
-SATISFIED_USER_PROMPT = """One of my kids chose to stand up to a friend when someone was bullying them."""
+RELIEF_USER_PROMPT = """I was working on a final project for a class and was able to get it done on time despite starting it late."""
+
+# this one is kind of middle line though 6.12 and 6.31 for valence + arousal
+# SATISFIED_USER_PROMPT = """One of my kids chose to stand up to a friend when someone was bullying them."""
 
 # this one is better
-SATISFIED_USER_PROMPT2 = """I just finished organizing my entire house, room by room. Everything is clean, labeled, and in its place. I can sit back and admire the work I put in."""
+SATISFIED_USER_PROMPT = """I just finished organizing my entire house, room by room. Everything is clean, labeled, and in its place. I can sit back and admire the work I put in."""
 
 GRATEFUL_USER_PROMPT = """I have realized I have so many blessings in my life, my family, my friends, my health, and the opportunities I have been given."""
 
@@ -156,11 +181,14 @@ LOW_ARS_NEG_VAL = [
     "fatigued"
 ]
 
-# arousal way too high
-SAD_PROMPT = """Your dog that you've had since you were 8 years old just died. He was your best friend and you miss him so much."""
+# arousal way too high, but also think this is unaccurate
+SAD_PROMPT = """You've been feeling down for weeks now. Everything feels heavy and gray. You don't have energy for anything. You're lying in bed in the middle of the afternoon, staring at the ceiling, feeling empty."""
 
 # arousal a tiny bit high
-LONELY_PROMPT = """You just moved to a new city and don't know anyone. You are sitting in your apartment alone on a Friday night."""
+# LONELY_PROMPT = """You just moved to a new city and don't know anyone. You are sitting in your apartment alone on a Friday night."""
+
+LONELY_PROMPT = """You're sitting alone in your apartment on a quiet evening. You haven't talked to anyone today and scroll through social media wondering when you'll have someone to talk to."""
+# You scroll through social media seeing everyone else together and feel a deep, quiet ache of loneliness."""
 
 BORED_PROMPT = """You have been stuck at home for the past week due to bad weather. You have already watched all the movies and TV shows you have and are running out of things to do."""
 
@@ -169,10 +197,15 @@ FATIGUED_PROMPT = """You have been working on a big project for the past month a
 SAD_USER_PROMPT = """My grandmother just passed away and I am heartbroken. She was such a kind and loving person and I will miss her so much."""
 
 # arousal too high
-LONELY_USER_PROMPT = """My husband died 20 years ago and I have been living alone in my house ever since."""
+# LONELY_USER_PROMPT = """My husband died 20 years ago and I have been living alone in my house ever since."""
+
+LONELY_USER_PROMPT = """I've been living alone for years now. Most evenings I sit by myself wishing I had someone to talk to."""
+# It's a dull, persistent loneliness that never really goes away."""
 
 # arousal a bit too high
-BORED_USER_PROMPT = """I am stuck in stop and go traffic on the highway and I have been sitting in my car for hours with nothing to do."""
+# BORED_USER_PROMPT = """I am stuck in stop and go traffic on the highway and I have been sitting in my car for hours with nothing to do."""
+
+BORED_USER_PROMPT = """"I'm sitting at home with nothing to do. I've scrolled through my phone for hours. Everything feels dull and uninteresting."""
 
 FATIGUED_USER_PROMPT = """I only got 4 hours of sleep last night since I was working on a big project and I have to work on it more this morning."""
 

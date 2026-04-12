@@ -1,3 +1,5 @@
+import json
+
 import torch
 from transformers import AutoTokenizer, AutoModel, AutoConfig
 import torch.nn as nn
@@ -18,7 +20,6 @@ high_ars_pos_val_prompts = {
 high_ars_neg_val_prompts = {
     "angry": prompts.ANGRY_PROMPT,
     "annoyed": prompts.ANNOYED_PROMPT,
-    "annoyed2": prompts.ANNOYED_PROMPT2,
     "afraid": prompts.AFRAID_PROMPT,
     "disgusted": prompts.DISGUSTED_PROMPT,
     "angry_user": prompts.ANGRY_USER_PROMPT,
@@ -30,13 +31,11 @@ high_ars_neg_val_prompts = {
 low_ars_pos_val_prompts = {
     "content": prompts.CONTENT_PROMPT,
     "relief": prompts.RELIEF_PROMPT,
-    "relief2": prompts.RELIEF_PROMPT2,
     "satisfied": prompts.SATISFIED_PROMPT,
     "grateful": prompts.GRATEFUL_PROMPT,
     "content_user": prompts.CONTENT_USER_PROMPT,
     "relief_user": prompts.RELIEF_USER_PROMPT,
     "satisfied_user": prompts.SATISFIED_USER_PROMPT,
-    "satisfied_user2": prompts.SATISFIED_USER_PROMPT2,
     "grateful_user": prompts.GRATEFUL_USER_PROMPT
 }
 
@@ -55,7 +54,6 @@ neutral_prompts = {
     "neutral": prompts.NEUTRAL_PROMPT,
     "neutral2": prompts.NEUTRAL_PROMPT2,
     "focused": prompts.FOCUSED_PROMPT,
-    "focused2": prompts.FOCUSED_PROMPT2,
     "unaffected": prompts.UNAFFECTED_PROMPT,
     "indifferent": prompts.INDIFFERENT_PROMPT,
     "neutral_user": prompts.NEUTRAL_USER_PROMPT,
@@ -260,7 +258,6 @@ class VAPredictor:
 # Usage
 model_dir = "/home/tessa343/classes/501R-final-project/src/va_model"
 
-# Use CPU to avoid CUDA error
 predictor = VAPredictor(model_dir, use_cuda=False)
 
 
@@ -284,9 +281,15 @@ predictor = VAPredictor(model_dir, use_cuda=False)
 #     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
 #     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
 
+
+
+
+
 print("\n" + "="*80)
 print("Testing Positive Valence High Arousal Predictions")
 print("="*80)
+
+ratings = {}
 
 for emotion, text in high_ars_pos_val_prompts.items():
     result = predictor.predict_with_scales(text)
@@ -294,6 +297,15 @@ for emotion, text in high_ars_pos_val_prompts.items():
     print(f"\nEmotion: {emotion} \nText: {text}")
     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+    ratings[emotion] = {
+        'text': text,
+        'valence_0_1': result['valence_0_1'],
+        'arousal_0_1': result['arousal_0_1'],
+        'valence_1_9': result['valence_1_9'],
+        'arousal_1_9': result['arousal_1_9']
+    }
+    # with open("ratings.txt", "a") as f:
+
 
 
 
@@ -307,7 +319,13 @@ for emotion, text in high_ars_neg_val_prompts.items():
     print(f"\nEmotion: {emotion} \nText: {text}")
     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
-
+    ratings[emotion] = {
+        'text': text,
+        'valence_0_1': result['valence_0_1'],
+        'arousal_0_1': result['arousal_0_1'],
+        'valence_1_9': result['valence_1_9'],
+        'arousal_1_9': result['arousal_1_9']
+    }
 
 
 print("\n" + "="*80)
@@ -320,7 +338,13 @@ for emotion, text in low_ars_pos_val_prompts.items():
     print(f"\nEmotion: {emotion} \nText: {text}")
     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
-
+    ratings[emotion] = {
+        'text': text,
+        'valence_0_1': result['valence_0_1'],
+        'arousal_0_1': result['arousal_0_1'],
+        'valence_1_9': result['valence_1_9'],
+        'arousal_1_9': result['arousal_1_9']
+    }
 
 
 print("\n" + "="*80)
@@ -333,7 +357,13 @@ for emotion, text in low_ars_neg_val_prompts.items():
     print(f"\nEmotion: {emotion} \nText: {text}")
     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
-
+    ratings[emotion] = {
+        'text': text,
+        'valence_0_1': result['valence_0_1'],
+        'arousal_0_1': result['arousal_0_1'],
+        'valence_1_9': result['valence_1_9'],
+        'arousal_1_9': result['arousal_1_9']
+    }
 
 print("\n" + "="*80)
 print("Testing Neutral Prompts Predictions")
@@ -345,3 +375,14 @@ for emotion, text in neutral_prompts.items():
     print(f"\nEmotion: {emotion} \nText: {text}")
     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+    ratings[emotion] = {
+        'text': text,
+        'valence_0_1': result['valence_0_1'],
+        'arousal_0_1': result['arousal_0_1'],
+        'valence_1_9': result['valence_1_9'],
+        'arousal_1_9': result['arousal_1_9']
+    }
+
+
+with open("ratings.json", "a") as f:
+    json.dump(ratings, f, indent=4)

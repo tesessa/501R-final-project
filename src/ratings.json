@@ -1,0 +1,296 @@
+{
+    "excited": {
+        "text": "You have wanted to go to Italy your whole life. You are preparing to leave for the trip tomorrow!",
+        "valence_0_1": 0.8602118492126465,
+        "arousal_0_1": 0.8281426429748535,
+        "valence_1_9": 7.881694793701172,
+        "arousal_1_9": 7.625141143798828
+    },
+    "joyful": {
+        "text": "You hug your spouse for the first time in a year when they get back from the military",
+        "valence_0_1": 0.896517276763916,
+        "arousal_0_1": 0.7841342687606812,
+        "valence_1_9": 8.172138214111328,
+        "arousal_1_9": 7.273074150085449
+    },
+    "amused": {
+        "text": "You are watching a comedy show and are laughing hysterically at the jokes being told.",
+        "valence_0_1": 0.9062068462371826,
+        "arousal_0_1": 0.813186526298523,
+        "valence_1_9": 8.249654769897461,
+        "arousal_1_9": 7.505492210388184
+    },
+    "enthusiastic": {
+        "text": "You are very excited and proud of your research project that you have been working on. Someone asks you to talk about it with them.",
+        "valence_0_1": 0.892662763595581,
+        "arousal_0_1": 0.7676095366477966,
+        "valence_1_9": 8.141302108764648,
+        "arousal_1_9": 7.140876293182373
+    },
+    "excited_user": {
+        "text": "I just found out I got promoted at work to a position that I've been working towards for years!",
+        "valence_0_1": 0.8388111591339111,
+        "arousal_0_1": 0.671198308467865,
+        "valence_1_9": 7.710489273071289,
+        "arousal_1_9": 6.36958646774292
+    },
+    "joyful_user": {
+        "text": "I just found out that I passed my final exam and will be graduating on time!",
+        "valence_0_1": 0.8305942416191101,
+        "arousal_0_1": 0.5433518290519714,
+        "valence_1_9": 7.644753932952881,
+        "arousal_1_9": 5.3468146324157715
+    },
+    "amused_user": {
+        "text": "I watched the funniest movie last night and I couldn't stop laughing!",
+        "valence_0_1": 0.8655601143836975,
+        "arousal_0_1": 0.6800588965415955,
+        "valence_1_9": 7.92448091506958,
+        "arousal_1_9": 6.440471172332764
+    },
+    "enthusiastic_user": {
+        "text": "I just finally learned a chopin etude on the piano that I've been working on for months and I get to perform it tomorrow!",
+        "valence_0_1": 0.8332645893096924,
+        "arousal_0_1": 0.6323084235191345,
+        "valence_1_9": 7.666116714477539,
+        "arousal_1_9": 6.058467388153076
+    },
+    "angry": {
+        "text": "You just found out that your roommate has been stealing your food from the fridge for the past month.",
+        "valence_0_1": 0.120237335562706,
+        "arousal_0_1": 0.8474796414375305,
+        "valence_1_9": 1.961898684501648,
+        "arousal_1_9": 7.779837131500244
+    },
+    "annoyed": {
+        "text": "You're trying to concentrate on work but your neighbor has been playing loud music for the past hour. You can hear the bass thumping through the walls.",
+        "valence_0_1": 0.1638893485069275,
+        "arousal_0_1": 0.6981210112571716,
+        "valence_1_9": 2.31111478805542,
+        "arousal_1_9": 6.584968090057373
+    },
+    "afraid": {
+        "text": "You are alone in a dark room and hear strange noises coming from the walls.",
+        "valence_0_1": 0.10450953990221024,
+        "arousal_0_1": 0.7844842672348022,
+        "valence_1_9": 1.8360763192176819,
+        "arousal_1_9": 7.275874137878418
+    },
+    "disgusted": {
+        "text": "You went to your favorite restaurant and ordered your favorite dish. Halfway through eating the meal you find a spider in it.",
+        "valence_0_1": 0.1955767720937729,
+        "arousal_0_1": 0.898991584777832,
+        "valence_1_9": 2.564614176750183,
+        "arousal_1_9": 8.191932678222656
+    },
+    "angry_user": {
+        "text": "I just found out that my little brother dropped and broke my laptop.",
+        "valence_0_1": 0.43711239099502563,
+        "arousal_0_1": 0.6836920976638794,
+        "valence_1_9": 4.496899127960205,
+        "arousal_1_9": 6.469536781311035
+    },
+    "annoyed_user": {
+        "text": "My roommate won't stop eating really loud chips in the living room while I'm trying to work on a project.",
+        "valence_0_1": 0.2657566964626312,
+        "arousal_0_1": 0.5829730033874512,
+        "valence_1_9": 3.12605357170105,
+        "arousal_1_9": 5.663784027099609
+    },
+    "afraid_user": {
+        "text": "I am walking home late at night and I hear footsteps behind me. I am alone and don't know who is following me.",
+        "valence_0_1": 0.09723202139139175,
+        "arousal_0_1": 0.7974939942359924,
+        "valence_1_9": 1.777856171131134,
+        "arousal_1_9": 7.3799519538879395
+    },
+    "disgusted_user": {
+        "text": "My son just threw up and I have to clean it up. I am so grossed out.",
+        "valence_0_1": 0.1031099259853363,
+        "arousal_0_1": 0.8522530794143677,
+        "valence_1_9": 1.8248794078826904,
+        "arousal_1_9": 7.818024635314941
+    },
+    "content": {
+        "text": "You have just had a successful day at work and everything is going well in your life. You decide to curl up on the couch with a good book and a cup of tea.",
+        "valence_0_1": 0.8963093161582947,
+        "arousal_0_1": 0.11999411135911942,
+        "valence_1_9": 8.170474529266357,
+        "arousal_1_9": 1.9599528908729553
+    },
+    "relief": {
+        "text": "You were extremely worried about a medical test result, but you just got the call that everything is fine.",
+        "valence_0_1": 0.7321873307228088,
+        "arousal_0_1": 0.690512478351593,
+        "valence_1_9": 6.857498645782471,
+        "arousal_1_9": 6.524099826812744
+    },
+    "satisfied": {
+        "text": "You just finished a grant application that you have been working on for months. It turned out even better than you expected and you can finally relax.",
+        "valence_0_1": 0.9273234605789185,
+        "arousal_0_1": 0.49109554290771484,
+        "valence_1_9": 8.418587684631348,
+        "arousal_1_9": 4.928764343261719
+    },
+    "grateful": {
+        "text": "You are hiking in the mountains and come across a beautiful view. You take a moment to appreciate the beauty of nature and ponder on everything that is going right in your life and the blessings you have.",
+        "valence_0_1": 0.9139044284820557,
+        "arousal_0_1": 0.16023318469524384,
+        "valence_1_9": 8.311235427856445,
+        "arousal_1_9": 2.2818654775619507
+    },
+    "content_user": {
+        "text": "I am graduating college in a few weeks, I have a job lined up, and I am getting married in a month to my best friend and everything is ready for the wedding.",
+        "valence_0_1": 0.7899616360664368,
+        "arousal_0_1": 0.6705726981163025,
+        "valence_1_9": 7.319693088531494,
+        "arousal_1_9": 6.36458158493042
+    },
+    "relief_user": {
+        "text": "I was working on a final project for a class and was able to get it done on time despite starting it late.",
+        "valence_0_1": 0.6964460015296936,
+        "arousal_0_1": 0.1282190978527069,
+        "valence_1_9": 6.571568012237549,
+        "arousal_1_9": 2.0257527828216553
+    },
+    "satisfied_user": {
+        "text": "I just finished organizing my entire house, room by room. Everything is clean, labeled, and in its place. I can sit back and admire the work I put in.",
+        "valence_0_1": 0.876906156539917,
+        "arousal_0_1": 0.27138006687164307,
+        "valence_1_9": 8.015249252319336,
+        "arousal_1_9": 3.1710405349731445
+    },
+    "grateful_user": {
+        "text": "I have realized I have so many blessings in my life, my family, my friends, my health, and the opportunities I have been given.",
+        "valence_0_1": 0.8929256796836853,
+        "arousal_0_1": 0.3562144339084625,
+        "valence_1_9": 8.143405437469482,
+        "arousal_1_9": 3.8497154712677
+    },
+    "sad": {
+        "text": "You've been feeling down for weeks now. Everything feels heavy and gray. You don't have energy for anything. You're lying in bed in the middle of the afternoon, staring at the ceiling, feeling empty.",
+        "valence_0_1": 0.11963247507810593,
+        "arousal_0_1": 0.27756550908088684,
+        "valence_1_9": 1.9570598006248474,
+        "arousal_1_9": 3.2205240726470947
+    },
+    "lonely": {
+        "text": "You're sitting alone in your apartment on a quiet evening. You haven't talked to anyone today and scroll through social media wondering when you'll have someone to talk to.",
+        "valence_0_1": 0.32472237944602966,
+        "arousal_0_1": 0.11303447932004929,
+        "valence_1_9": 3.5977790355682373,
+        "arousal_1_9": 1.9042758345603943
+    },
+    "bored": {
+        "text": "You have been stuck at home for the past week due to bad weather. You have already watched all the movies and TV shows you have and are running out of things to do.",
+        "valence_0_1": 0.29245680570602417,
+        "arousal_0_1": 0.23778598010540009,
+        "valence_1_9": 3.3396544456481934,
+        "arousal_1_9": 2.9022878408432007
+    },
+    "fatigued": {
+        "text": "You have been working on a big project for the past month and have been putting in long hours. You are exhausted and just want to go to bed.",
+        "valence_0_1": 0.3405214250087738,
+        "arousal_0_1": 0.29563942551612854,
+        "valence_1_9": 3.7241714000701904,
+        "arousal_1_9": 3.3651154041290283
+    },
+    "sad_user": {
+        "text": "My grandmother just passed away and I am heartbroken. She was such a kind and loving person and I will miss her so much.",
+        "valence_0_1": 0.1179228350520134,
+        "arousal_0_1": 0.12592154741287231,
+        "valence_1_9": 1.9433826804161072,
+        "arousal_1_9": 2.0073723793029785
+    },
+    "lonely_user": {
+        "text": "I've been living alone for years now. Most evenings I sit by myself wishing I had someone to talk to.",
+        "valence_0_1": 0.15474829077720642,
+        "arousal_0_1": 0.2966635525226593,
+        "valence_1_9": 2.2379863262176514,
+        "arousal_1_9": 3.3733084201812744
+    },
+    "bored_user": {
+        "text": "\"I'm sitting at home with nothing to do. I've scrolled through my phone for hours. Everything feels dull and uninteresting.",
+        "valence_0_1": 0.252964586019516,
+        "arousal_0_1": 0.21939991414546967,
+        "valence_1_9": 3.023716688156128,
+        "arousal_1_9": 2.7551993131637573
+    },
+    "fatigued_user": {
+        "text": "I only got 4 hours of sleep last night since I was working on a big project and I have to work on it more this morning.",
+        "valence_0_1": 0.2554655969142914,
+        "arousal_0_1": 0.07100890576839447,
+        "valence_1_9": 3.043724775314331,
+        "arousal_1_9": 1.5680712461471558
+    },
+    "neutral": {
+        "text": "You are going about your day as usual, doing your normal activities.",
+        "valence_0_1": 0.6691091060638428,
+        "arousal_0_1": 0.15583568811416626,
+        "valence_1_9": 6.352872848510742,
+        "arousal_1_9": 2.24668550491333
+    },
+    "neutral2": {
+        "text": "You are doing your daily grocery shopping on a Wednesday afternoon. You're going through your list, picking items off shelves. Nothing unusual is happening.",
+        "valence_0_1": 0.541645348072052,
+        "arousal_0_1": 0.17945677042007446,
+        "valence_1_9": 5.333162784576416,
+        "arousal_1_9": 2.4356541633605957
+    },
+    "focused": {
+        "text": "You are working on a task that requires your full attention and concentration. You are completely absorbed in the task and are not distracted by anything else.",
+        "valence_0_1": 0.6523004174232483,
+        "arousal_0_1": 0.43367496132850647,
+        "valence_1_9": 6.218403339385986,
+        "arousal_1_9": 4.469399690628052
+    },
+    "unaffected": {
+        "text": "You are in a situation where something bad happens, but you are not emotionally affected by it and are able to remain calm and composed.",
+        "valence_0_1": 0.7622058987617493,
+        "arousal_0_1": 0.16440550982952118,
+        "valence_1_9": 7.097647190093994,
+        "arousal_1_9": 2.3152440786361694
+    },
+    "indifferent": {
+        "text": "Your friend is telling you about a problem they are having, but you don't really care and are not emotionally invested in the situation.",
+        "valence_0_1": 0.21006251871585846,
+        "arousal_0_1": 0.4002777636051178,
+        "valence_1_9": 2.6805001497268677,
+        "arousal_1_9": 4.202222108840942
+    },
+    "neutral_user": {
+        "text": "I am going about my day as usual, doing my normal activities.",
+        "valence_0_1": 0.5711214542388916,
+        "arousal_0_1": 0.3664529621601105,
+        "valence_1_9": 5.568971633911133,
+        "arousal_1_9": 3.931623697280884
+    },
+    "focused_user": {
+        "text": "I have been working on wiring electricity in my shed for hours without noticing how much time has passed.",
+        "valence_0_1": 0.35350722074508667,
+        "arousal_0_1": 0.10662072151899338,
+        "valence_1_9": 3.8280577659606934,
+        "arousal_1_9": 1.852965772151947
+    },
+    "focused_user2": {
+        "text": "I have been working on wiring electricity in my shed for hours without noticing how much time has passed.",
+        "valence_0_1": 0.35350722074508667,
+        "arousal_0_1": 0.10662072151899338,
+        "valence_1_9": 3.8280577659606934,
+        "arousal_1_9": 1.852965772151947
+    },
+    "unaffected_user": {
+        "text": "My coworker didn't do a task I asked them to do but I am not upset about it at all, I know it will get done eventually.",
+        "valence_0_1": 0.39534085988998413,
+        "arousal_0_1": 0.10644122958183289,
+        "valence_1_9": 4.162726879119873,
+        "arousal_1_9": 1.851529836654663
+    },
+    "indifferent_user": {
+        "text": "I am watching a football game with my friend who cares about their team winning. I don't really care who wins or what happens.",
+        "valence_0_1": 0.4939121603965759,
+        "arousal_0_1": 0.06350236386060715,
+        "valence_1_9": 4.951297283172607,
+        "arousal_1_9": 1.5080189108848572
+    }
+}
