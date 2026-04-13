@@ -10,13 +10,22 @@ from datetime import datetime
 import prompts
 from utils import Struct
 
-def load_model(model_name, device):
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
+os.environ["HF_DATASETS_OFFLINE"] = "1"
+
+def load_model(model_name, device1):
+    tokenizer = AutoTokenizer.from_pretrained(
+        model_name,
+        local_files_only=True
+    )
     hf_model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype=torch.float16,
-        device_map="auto" if device == "auto" else None,
+        device_map="cuda",
+        local_files_only=True
     )
+
+    print(f"✓ Model loaded on: {hf_model.device}")
+    print(f"✓ Model dtype: {hf_model.dtype}")
 
     return HFLM(
         pretrained=hf_model,
@@ -28,7 +37,12 @@ def run_eval(config):
     os.environ["HF_DATASETS_OFFLINE"] = "1"
     os.environ["TRANSFORMERS_OFFLINE"] = "1"
 
+    print(f"\n{'='*60}")
+    print(f"Loading model: {config.model_name}")
+    print('='*60)
+
     model = load_model(config.model_name, config.device)
+
     conditions = {
         "baseline": "",
         "excited": prompts.EXCITED_PROMPT,
@@ -54,12 +68,31 @@ def run_eval(config):
         print(f"Loading existing results from {config.results_file}")
         with open(config.results_file, "r") as f:
             results = json.load(f)
+        print(f"Found results for: {list(results.keys())}")
     else:
         os.makedirs(os.path.dirname(config.results_file), exist_ok=True)
         results = {}
     
     for condition_name, emotional_prompt in conditions.items():
-        print(f"\nEvaluating condition: {condition_name}")
+        # if condition_name in results and config.name in results[condition_name]:
+        #     print(f"SKIPPING {condition_name}")
+        #     continue
+        if condition_name in results:
+            # Check if all tasks are completed
+            all_tasks_done = all(
+                task in results[condition_name] 
+                for task in config.tasks
+            )
+            if all_tasks_done:
+                print(f"\n{'='*60}")
+                print(f"SKIPPING {condition_name} (already completed)")
+                print('='*60)
+                continue
+
+        
+        print(f"\n{'='*60}")
+        print(f"Evaluating: {condition_name}")
+        print('='*60)
 
         try:
             result = lm_eval.simple_evaluate(
@@ -68,28 +101,56 @@ def run_eval(config):
                 num_fewshot=config.num_fewshot,
                 batch_size=config.batch_size,
                 system_instruction=emotional_prompt,
-                device=config.device,
+                # device=config.device,
                 limit=config.limit,
-                seed=config.seed,
+                # seed=config.seed,
                 log_samples=True,
-                output_path=os.path.join(config.output_dir, condition_name),   # THIS is key
-                use_cache=config.cache_dir,
+                # output_path=os.path.join(config.output_dir, condition_name),   # THIS is key
+                # use_cache=config.cache_dir,
             )
 
             if condition_name not in results:
                 results[condition_name] = {}
             
-            results[condition_name][config.name] = result["results"]
+            for task in config.tasks:
+                if task in result["results"]:
+                    results[condition_name][task] = result["results"][task]
+
+                    task_res = result["results"][task]
+                    if 'acc' in task_res:
+                        print(f" ✓ {task}: {task_res['acc']:.3f}")
+                    elif 'acc_norm' in task_res:
+                        print(f" ✓ {task}: {task_res['acc_norm']:.3f}")
+                else:
+                    print(f"  ⚠ {task}: NOT FOUND in results")
 
             with open(config.results_file, "w") as f:
                 json.dump(results, f, indent=2)
             
-            print(f"Results for {condition_name} saved to {config.results_file}")
+            print(f"\n✓Results for {condition_name} saved to {config.results_file}")
         
+        except KeyboardInterrupt:
+            print("\n\n⚠ Interrupted by user")
+            # Save what we have
+            with open(config.results_file, "w") as f:
+                json.dump(results, f, indent=2)
+            print(f"Partial results saved to {config.results_file}")
+            sys.exit(1)
         except Exception as e:
-            print(f"Error occurred while evaluating {condition_name}: {e}")
+            print(f"\n✗ ERROR in {condition_name}: {e}")
+            import traceback
+            traceback.print_exc()
+            
+            # Save partial results anyway
+            with open(config.results_file, "w") as f:
+                json.dump(results, f, indent=2)
+            
+            print("Continuing to next condition...")
             continue
 
+    print("\n" + "="*60)
+    print("ALL CONDITIONS COMPLETE")
+    print("="*60)
 
 if __name__ == "__main__":
     config_path = sys.argv[1]

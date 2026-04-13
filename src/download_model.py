@@ -20,9 +20,11 @@ from datasets import load_dataset
 
 datasets_info = {
     "arc_easy": ("allenai/ai2_arc", "ARC-Easy"),
+    "arc_challenge": ("allenai/ai2_arc", "ARC-Challenge"),
     "hellaswag": ("Rowan/hellaswag", None),
     "winogrande": ("allenai/winogrande", "winogrande_xl"),
     "mmlu_pro": ("TIGER-Lab/MMLU-Pro", None),
+    "truthfulqa": ("truthful_qa", "multiple_choice"), 
 }
 
 for name, (dataset_path, config) in datasets_info.items():
