@@ -1,0 +1,17 @@
+name: mmlu_pro_stem
+model_name: meta-llama/Llama-3.1-8B-Instruct
+tasks: [
+  "mmlu_pro_math",
+  "mmlu_pro_physics",
+  "mmlu_pro_engineering",
+  "mmlu_pro_biology"
+]
+limit: 50
+num_fewshot: 5
+batch_size: 8
+device: cuda:0
+seed: 42
+
+results_file: results/mmlu/results_mmlu_stem.json
+output_dir: outputs/mmlu/
+cache_dir: ./lm_cache

@@ -1,0 +1,17 @@
+name: mmlu_pro_humanities
+model_name: meta-llama/Llama-3.1-8B-Instruct
+tasks: [
+  "mmlu_pro_history",
+  "mmlu_pro_philosophy",
+  "mmlu_pro_psychology",
+  "mmlu_pro_law"
+  ]
+limit: 50
+num_fewshot: 5
+batch_size: 8
+device: cuda:0
+seed: 42
+
+results_file: results/mmlu/results_mmlu_humanities.json
+output_dir: outputs/mmlu/
+cache_dir: ./lm_cache

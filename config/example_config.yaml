@@ -1,0 +1,12 @@
+name: # name of benchmark or task you're testing model on
+model_name: 
+tasks: [""]
+limit: # int
+num_fewshot: # int
+batch_size: # int
+device: # cuda:0 or cpu
+seed: # int
+
+results_file: # where acc results will go
+output_dir: # output dir for log_samples
+cache_dir: # cache_dir for output_cache

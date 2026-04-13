@@ -1,0 +1,12 @@
+name: truthful_qa
+model_name: meta-llama/Llama-3.1-8B-Instruct
+tasks: ["truthfulqa_mc"]
+limit: 100
+num_fewshot: 5
+batch_size: 8
+device: cuda:0
+seed: 42
+
+results_file: results/truthfulqa/results_truthfulqa.json
+output_dir: outputs/truthfulqa/
+cache_dir: ./lm_cache
