@@ -5,6 +5,19 @@ from transformers import AutoTokenizer, AutoModel, AutoConfig
 import torch.nn as nn
 import numpy as np
 import prompts
+import user_prompts
+
+new_user_prompts = {
+    "focused": user_prompts.EMOTIONAL_PROMPTS["focused"]["prefix"],
+    "excited": user_prompts.EMOTIONAL_PROMPTS["excited"]["prefix"],
+    "euphoric": user_prompts.EMOTIONAL_PROMPTS["euphoric"]["prefix"],
+    "terrified": user_prompts.EMOTIONAL_PROMPTS["terrified"]["prefix"],
+    "enraged": user_prompts.EMOTIONAL_PROMPTS["enraged"]["prefix"],
+    "peaceful": user_prompts.EMOTIONAL_PROMPTS["peaceful"]["prefix"],
+    "grateful": user_prompts.EMOTIONAL_PROMPTS["grateful"]["prefix"],
+    "depressed": user_prompts.EMOTIONAL_PROMPTS["depressed"]["prefix"],
+    "hopeless": user_prompts.EMOTIONAL_PROMPTS["hopeless"]["prefix"],
+}
 
 high_ars_pos_val_prompts = {
     "excited": prompts.EXCITED_PROMPT,
@@ -62,6 +75,8 @@ neutral_prompts = {
     "unaffected_user": prompts.UNAFFECTED_USER_PROMPT,
     "indifferent_user": prompts.INDIFFERENT_USER_PROMPT
 }
+
+
 
 class VAPredictor:
     def __init__(self, model_dir, use_cuda=True):
@@ -291,7 +306,100 @@ print("="*80)
 
 ratings = {}
 
-for emotion, text in high_ars_pos_val_prompts.items():
+# for emotion, text in high_ars_pos_val_prompts.items():
+#     result = predictor.predict_with_scales(text)
+    
+#     print(f"\nEmotion: {emotion} \nText: {text}")
+#     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
+#     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+#     ratings[emotion] = {
+#         'text': text,
+#         'valence_0_1': result['valence_0_1'],
+#         'arousal_0_1': result['arousal_0_1'],
+#         'valence_1_9': result['valence_1_9'],
+#         'arousal_1_9': result['arousal_1_9']
+#     }
+#     # with open("ratings.txt", "a") as f:
+
+
+
+
+# print("\n" + "="*80)
+# print("Testing Negative Valence High Arousal Predictions")
+# print("="*80)
+
+# for emotion, text in high_ars_neg_val_prompts.items():
+#     result = predictor.predict_with_scales(text)
+    
+#     print(f"\nEmotion: {emotion} \nText: {text}")
+#     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
+#     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+#     ratings[emotion] = {
+#         'text': text,
+#         'valence_0_1': result['valence_0_1'],
+#         'arousal_0_1': result['arousal_0_1'],
+#         'valence_1_9': result['valence_1_9'],
+#         'arousal_1_9': result['arousal_1_9']
+#     }
+
+
+# print("\n" + "="*80)
+# print("Testing Positive Valence Low Arousal Predictions")
+# print("="*80)
+
+# for emotion, text in low_ars_pos_val_prompts.items():
+#     result = predictor.predict_with_scales(text)
+    
+#     print(f"\nEmotion: {emotion} \nText: {text}")
+#     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
+#     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+#     ratings[emotion] = {
+#         'text': text,
+#         'valence_0_1': result['valence_0_1'],
+#         'arousal_0_1': result['arousal_0_1'],
+#         'valence_1_9': result['valence_1_9'],
+#         'arousal_1_9': result['arousal_1_9']
+#     }
+
+
+# print("\n" + "="*80)
+# print("Testing Negative Valence Low Arousal Predictions")
+# print("="*80)
+
+# for emotion, text in low_ars_neg_val_prompts.items():
+#     result = predictor.predict_with_scales(text)
+    
+#     print(f"\nEmotion: {emotion} \nText: {text}")
+#     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
+#     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+#     ratings[emotion] = {
+#         'text': text,
+#         'valence_0_1': result['valence_0_1'],
+#         'arousal_0_1': result['arousal_0_1'],
+#         'valence_1_9': result['valence_1_9'],
+#         'arousal_1_9': result['arousal_1_9']
+#     }
+
+# print("\n" + "="*80)
+# print("Testing Neutral Prompts Predictions")
+# print("="*80)
+
+# for emotion, text in neutral_prompts.items():
+#     result = predictor.predict_with_scales(text)
+    
+#     print(f"\nEmotion: {emotion} \nText: {text}")
+#     print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
+#     print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
+#     ratings[emotion] = {
+#         'text': text,
+#         'valence_0_1': result['valence_0_1'],
+#         'arousal_0_1': result['arousal_0_1'],
+#         'valence_1_9': result['valence_1_9'],
+#         'arousal_1_9': result['arousal_1_9']
+#     }
+
+
+for emotion, text in new_user_prompts.items():
     result = predictor.predict_with_scales(text)
     
     print(f"\nEmotion: {emotion} \nText: {text}")
@@ -304,85 +412,6 @@ for emotion, text in high_ars_pos_val_prompts.items():
         'valence_1_9': result['valence_1_9'],
         'arousal_1_9': result['arousal_1_9']
     }
-    # with open("ratings.txt", "a") as f:
 
-
-
-
-print("\n" + "="*80)
-print("Testing Negative Valence High Arousal Predictions")
-print("="*80)
-
-for emotion, text in high_ars_neg_val_prompts.items():
-    result = predictor.predict_with_scales(text)
-    
-    print(f"\nEmotion: {emotion} \nText: {text}")
-    print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
-    print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
-    ratings[emotion] = {
-        'text': text,
-        'valence_0_1': result['valence_0_1'],
-        'arousal_0_1': result['arousal_0_1'],
-        'valence_1_9': result['valence_1_9'],
-        'arousal_1_9': result['arousal_1_9']
-    }
-
-
-print("\n" + "="*80)
-print("Testing Positive Valence Low Arousal Predictions")
-print("="*80)
-
-for emotion, text in low_ars_pos_val_prompts.items():
-    result = predictor.predict_with_scales(text)
-    
-    print(f"\nEmotion: {emotion} \nText: {text}")
-    print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
-    print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
-    ratings[emotion] = {
-        'text': text,
-        'valence_0_1': result['valence_0_1'],
-        'arousal_0_1': result['arousal_0_1'],
-        'valence_1_9': result['valence_1_9'],
-        'arousal_1_9': result['arousal_1_9']
-    }
-
-
-print("\n" + "="*80)
-print("Testing Negative Valence Low Arousal Predictions")
-print("="*80)
-
-for emotion, text in low_ars_neg_val_prompts.items():
-    result = predictor.predict_with_scales(text)
-    
-    print(f"\nEmotion: {emotion} \nText: {text}")
-    print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
-    print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
-    ratings[emotion] = {
-        'text': text,
-        'valence_0_1': result['valence_0_1'],
-        'arousal_0_1': result['arousal_0_1'],
-        'valence_1_9': result['valence_1_9'],
-        'arousal_1_9': result['arousal_1_9']
-    }
-
-print("\n" + "="*80)
-print("Testing Neutral Prompts Predictions")
-print("="*80)
-
-for emotion, text in neutral_prompts.items():
-    result = predictor.predict_with_scales(text)
-    
-    print(f"\nEmotion: {emotion} \nText: {text}")
-    print(f"  Valence: {result['valence_0_1']:.3f} (0-1) = {result['valence_1_9']:.2f} (1-9)")
-    print(f"  Arousal: {result['arousal_0_1']:.3f} (0-1) = {result['arousal_1_9']:.2f} (1-9)")
-    ratings[emotion] = {
-        'text': text,
-        'valence_0_1': result['valence_0_1'],
-        'arousal_0_1': result['arousal_0_1'],
-        'valence_1_9': result['valence_1_9'],
-        'arousal_1_9': result['arousal_1_9']
-    }
-
-
-with open("ratings.json", "a") as f:
+with open("ratings2.json", "a") as f:
     json.dump(ratings, f, indent=4)

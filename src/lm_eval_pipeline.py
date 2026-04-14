@@ -20,7 +20,8 @@ def load_model(model_name, device1):
     hf_model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype=torch.float16,
-        device_map="cuda",
+        # device_map="cuda",
+        device_map = "auto",
         local_files_only=True
     )
 
@@ -72,7 +73,17 @@ def run_eval(config):
     else:
         os.makedirs(os.path.dirname(config.results_file), exist_ok=True)
         results = {}
-    
+
+    if os.path.exists(config.samples_file):
+        print(f"Loading existing samples from {config.samples_file}")
+        with open(config.samples_file, "r") as f:
+            samples = json.load(f)
+        print(f"Found samples for: {list(samples.keys())}")
+    else:
+        os.makedirs(os.path.dirname(config.samples_file), exist_ok=True)
+        samples = {}
+
+
     for condition_name, emotional_prompt in conditions.items():
         # if condition_name in results and config.name in results[condition_name]:
         #     print(f"SKIPPING {condition_name}")
@@ -128,6 +139,21 @@ def run_eval(config):
                 json.dump(results, f, indent=2)
             
             print(f"\n✓Results for {condition_name} saved to {config.results_file}")
+            
+            if "samples" in result:
+                if condition_name not in samples:
+                    samples[condition_name] = {}
+                
+                for task in config.tasks:
+                    if task in result["samples"]:
+                        samples[condition_name][task] = result["samples"][task]
+                
+                # Write samples to file
+                with open(config.samples_file, "w") as f:
+                    json.dump(samples, f, indent=2)
+                
+                print(f"✓ Samples saved to {config.samples_file}")
+
         
         except KeyboardInterrupt:
             print("\n\n⚠ Interrupted by user")

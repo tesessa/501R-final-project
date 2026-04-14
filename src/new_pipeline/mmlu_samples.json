@@ -1,0 +1,1328 @@
+{
+  "abstract_algebra": [
+    {
+      "question": "Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.",
+      "choices": [
+        "0",
+        "4",
+        "2",
+        "6"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.",
+      "choices": [
+        "8",
+        "2",
+        "24",
+        "120"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Find all zeros in the indicated finite field of the given polynomial with coefficients in that field. x^5 + 3x^3 + x^2 + 2x in Z_5",
+      "choices": [
+        "0",
+        "1",
+        "0,1",
+        "0,4"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Statement 1 | A factor group of a non-Abelian group is non-Abelian. Statement 2 | If K is a normal subgroup of H and H is a normal subgroup of G, then K is a normal subgroup of G.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Find the product of the given polynomials in the given polynomial ring. f(x) = 4x - 5, g(x) = 2x^2 - 4x + 2 in Z_8[x].",
+      "choices": [
+        "2x^2 + 5",
+        "6x^2 + 4x + 6",
+        "0",
+        "x^2 + 1"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Statement 1 | If a group has an element of order 15 it must have at least 8 elements of order 15. Statement 2 | If a group has more than 8 elements of order 15, it must have at least 16 elements of order 15.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Statement 1 | Every homomorphic image of a group G is isomorphic to a factor group of G. Statement 2 | The homomorphic images of a group G are the same (up to isomorphism) as the factor groups of G.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Statement 1 | A ring homomorphism is one to one if and only if the kernel is {0}. Statement 2 | Q is an ideal in R.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Find the degree for the given field extension Q(sqrt(2) + sqrt(3)) over Q.",
+      "choices": [
+        "0",
+        "4",
+        "2",
+        "6"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Find all zeros in the indicated finite field of the given polynomial with coefficients in that field. x^3 + 2x + 2 in Z_7",
+      "choices": [
+        "1",
+        "2",
+        "2,3",
+        "6"
+      ],
+      "answer": 2
+    }
+  ],
+  "machine_learning": [
+    {
+      "question": "Statement 1| Linear regression estimator has the smallest variance among all unbiased estimators. Statement 2| The coefficients \u03b1 assigned to the classifiers assembled by AdaBoost are always non-negative.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Statement 1| RoBERTa pretrains on a corpus that is approximate 10x larger than the corpus BERT pretrained on. Statement 2| ResNeXts in 2018 usually used tanh activation functions.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Statement 1| Support vector machines, like logistic regression models, give a probability distribution over the possible labels given an input example. Statement 2| We would expect the support vectors to remain the same in general as we move from a linear kernel to higher order polynomial kernels.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A machine learning problem involves four attributes plus a class. The attributes have 3, 2, 2, and 2 possible values each. The class has 3 possible values. How many maximum possible different examples are there?",
+      "choices": [
+        "12",
+        "24",
+        "48",
+        "72"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "As of 2020, which architecture is best for classifying high-resolution images?",
+      "choices": [
+        "convolutional networks",
+        "graph networks",
+        "fully connected networks",
+        "RBF networks"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Statement 1| The log-likelihood of the data will always increase through successive iterations of the expectation maximation algorithm. Statement 2| One disadvantage of Q-learning is that it can only be used when the learner has prior knowledge of how its actions affect its environment.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Let us say that we have computed the gradient of our cost function and stored it in a vector g. What is the cost of one gradient descent update given the gradient?",
+      "choices": [
+        "O(D)",
+        "O(N)",
+        "O(ND)",
+        "O(ND^2)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Statement 1| For a continuous random variable x and its probability distribution function p(x), it holds that 0 \u2264 p(x) \u2264 1 for all x. Statement 2| Decision tree is learned by minimizing information gain.",
+      "choices": [
+        "True, True",
+        "False, False",
+        "True, False",
+        "False, True"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Consider the Bayesian network given below. How many independent parameters are needed for this Bayesian Network H -> U <- P <- W?",
+      "choices": [
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "As the number of training examples goes to infinity, your model trained on that data will have:",
+      "choices": [
+        "Lower variance",
+        "Higher variance",
+        "Same variance",
+        "None of the above"
+      ],
+      "answer": 0
+    }
+  ],
+  "formal_logic": [
+    {
+      "question": "Identify the conclusion of the following argument. It is hard not to verify in our peers the same weakened intelligence due to emotions that we observe in our everyday patients. The arrogance of our consciousness, which in general, belongs to the strongest defense mechanisms, blocks the unconscious complexes. Because of this, it is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts. (Sigmund Freud, The Origin and Development of Psychoanalysis)",
+      "choices": [
+        "It is hard not to verify in our peers the same weakened intelligence due to emotions that we observe in our everyday patients.",
+        "The arrogance of our consciousness, which in general, belongs to the strongest defense mechanisms, blocks the unconscious complexes.",
+        "Because of this, it is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts.",
+        "It is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Select the best translation into predicate logic. David teaches Chris. (c: Chris; d: David; Txy: x teaches y)",
+      "choices": [
+        "Tdc",
+        "Tcd",
+        "Tcc",
+        "dTc"
+      ],
+      "answer": 0
+    },
+    {
+      "question": " Select the best English interpretation of the given proposition, using the following translation key: Ax: x is an apartment Hx: x is a house Lx: x is large Bxy: x is bigger than y (\u2203x)[(Ax \u2022 Lx) \u2022 (\u2203y)(Hy \u2022 Bxy)]",
+      "choices": [
+        "Some large houses are bigger than some apartments.",
+        "Some houses are bigger than all large apartments.",
+        "Some large apartments are bigger than some houses.",
+        "Some houses are bigger thatn some large apartments."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n~G \u2283 H\n~H / G",
+      "choices": [
+        "Valid",
+        "Invalid. Counterexample when G and H are true",
+        "Invalid. Counterexample when G is true and H is false",
+        "Invalid. Counterexample when H is true and G is false"
+      ],
+      "answer": 0
+    },
+    {
+      "question": " Use the following key to translate the given formula of PL to natural, English sentences.\nA: Marina reads a Percy Jackson book.\nB: Izzy plays Minecraft.\nC: Emily stops working.\nD: Russell makes dinner.\nE: Ashleigh stops by.\n(~B \u2022 E) \u2283 D",
+      "choices": [
+        "If it's not the case that both Izzy plays Minecraft and Ashleigh stops by then Russell makes dinner.",
+        "If it's both not the case that Izzy plays Minecraft and Ashleigh stops by then Russell makes dinner.",
+        "Izzy playing Minecraft and Ashleigh stopping by entails that Russell makes dinner.",
+        "Russell's making dinner is a sufficient condition for Izzy not playing Minecraft and Ashleigh stopping by."
+      ],
+      "answer": 1
+    },
+    {
+      "question": " Select the best English interpretation of the given proposition, using the following translation key: Ax: x is an apartment Hx: x is a house Lx: x is large Bxy: x is bigger than y (\u2203x)[Hx \u2022 (\u2200y)(Ay \u2283 Bxy)]",
+      "choices": [
+        "Some houses are smaller than all apartments.",
+        "Every house is bigger than every apartment.",
+        "Some apartment is smaller than every house.",
+        "Some houses are bigger than every apartment."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n~K \u2261 L / (K \u00b7 L) \u2228 (K \u00b7 ~L)",
+      "choices": [
+        "Valid",
+        "Invalid. Counterexample when K and L are true",
+        "Invalid. Counterexample when K is true and L is false",
+        "Invalid. Counterexample when L is true and K is false"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Identify the antecedent of the following conditional proposition: If the university does not increase financial aid, either the president fails to approve it or the board of trustees prevents it.",
+      "choices": [
+        "The university increases financial aid.",
+        "The university does not increase financial aid.",
+        "The board of trustees prevents it.",
+        "The president fails to approve it."
+      ],
+      "answer": 1
+    },
+    {
+      "question": " Which of the following propositions is an immediate (one-step) consequence in PL of the given premises?\n~E \u2283 ~F\nG \u2283 F\nH \u2228 ~E\nH \u2283 I\n~I",
+      "choices": [
+        "E \u2283 F",
+        "F \u2283 G",
+        "H \u2283 ~E",
+        "~H"
+      ],
+      "answer": 3
+    },
+    {
+      "question": " Which of the given formulas of PL is the best symbolization of the following sentence?\nEverybody loves Raymond, or not.",
+      "choices": [
+        "L",
+        "~L",
+        "L \u2022 ~L",
+        "L \u2228 ~L"
+      ],
+      "answer": 3
+    }
+  ],
+  "college_physics": [
+    {
+      "question": "The quantum efficiency of a photon detector is 0.1. If 100 photons are sent into the detector, one after the other, the detector will detect photons",
+      "choices": [
+        "an average of 10 times, with an rms deviation of about 4",
+        "an average of 10 times, with an rms deviation of about 3",
+        "an average of 10 times, with an rms deviation of about 1",
+        "an average of 10 times, with an rms deviation of about 0.1"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "White light is normally incident on a puddle of water (index of refraction 1.33). A thin (500 nm) layer of oil (index of refraction 1.5) floats on the surface of the puddle. Of the following, the most strongly reflected wavelength is",
+      "choices": [
+        "500 nm",
+        "550 nm",
+        "600 nm",
+        "650 nm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is true about any system that undergoes a reversible thermodynamic process?",
+      "choices": [
+        "There are no changes in the internal energy of the system.",
+        "The temperature of the system remains constant during the process.",
+        "The entropy of the system and its environment remains unchanged.",
+        "The entropy of the system and its environment must increase."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The best type of laser with which to do spectroscopy over a range of visible wavelengths is",
+      "choices": [
+        "a dye laser",
+        "a helium-neon laser",
+        "an excimer laser",
+        "a ruby laser"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Excited states of the helium atom can be characterized as para- (antiparallel electron spins) and ortho- (parallel electron spins). The observation that an ortho- state has lower energy than the corresponding para- state can be understood in terms of which of the following?",
+      "choices": [
+        "The Heisenberg uncertainty principle",
+        "The Pauli exclusion principle",
+        "The Bohr model of the atom",
+        "Nuclear hyperfine coupling"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following gives the total spin quantum number of the electrons in the ground state of neutral nitrogen (Z = 7)?",
+      "choices": [
+        "1/2",
+        "1",
+        "3/2",
+        "5/2"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Consider three identical, ideal capacitors. The first capacitor is charged to a voltage and then disconnected from the battery. The other two capacitors, initially uncharged and connected in series, are then connected across the first capacitor. What is the final voltage on the first capacitor?",
+      "choices": [
+        "V_0/5",
+        "V_0/3",
+        "V_0/2",
+        "2V_0/3"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Protons used in cancer therapy are typically accelerated to about 0.6c. How much work must be done on a particle of mass m in order for it to reach this speed, assuming it starts at rest?",
+      "choices": [
+        "0.25mc^2",
+        "0.60mc^2",
+        "0.67mc^2",
+        "1.25mc^2"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "De Broglie hypothesized that the linear momentum and wavelength of a free massive particle are related by which of the following constants?",
+      "choices": [
+        "Planck\u2019s constant",
+        "Boltzmann\u2019s constant",
+        "The Rydberg constant",
+        "The speed of light"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the total energy of a particle of mass m is equal to twice its rest energy, then the magnitude of the particle\u2019s relativistic momentum is",
+      "choices": [
+        "mc/2",
+        "mc/(2^(1/2))",
+        "mc",
+        "(3^(1/2))mc"
+      ],
+      "answer": 3
+    }
+  ],
+  "anatomy": [
+    {
+      "question": "A lesion causing compression of the facial nerve at the stylomastoid foramen will cause ipsilateral",
+      "choices": [
+        "paralysis of the facial muscles.",
+        "paralysis of the facial muscles and loss of taste.",
+        "paralysis of the facial muscles, loss of taste and lacrimation.",
+        "paralysis of the facial muscles, loss of taste, lacrimation and decreased salivation."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A \"dished face\" profile is often associated with",
+      "choices": [
+        "a protruding mandible due to reactivation of the condylar cartilage by acromegaly.",
+        "a recessive maxilla due to failure of elongation of the cranial base.",
+        "an enlarged frontal bone due to hydrocephaly.",
+        "defective development of the maxillary air sinus."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following best describes the structure that collects urine in the body?",
+      "choices": [
+        "Bladder",
+        "Kidney",
+        "Ureter",
+        "Urethra"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following structures is derived from ectomesenchyme?",
+      "choices": [
+        "Motor neurons",
+        "Skeletal muscles",
+        "Melanocytes",
+        "Sweat glands"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following describes the cluster of blood capillaries found in each nephron in the kidney?",
+      "choices": [
+        "Afferent arteriole",
+        "Glomerulus",
+        "Loop of Henle",
+        "Renal pelvis"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A patient suffers a broken neck with damage to the spinal cord at the level of the sixth cervical vertebra.",
+      "choices": [
+        "They will be unable to breathe without life support.",
+        "They will only be able to breathe quietly.",
+        "It is impossible to predict an effect on breathing.",
+        "Breathing will be unaffected."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following anatomical regions of abdomen lies just distal to the sternum?",
+      "choices": [
+        "Epigastric",
+        "Hypochondriac",
+        "Hypogastric",
+        "Lumbar"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following best describes the human body's defense mechanism against environmental bacteria?",
+      "choices": [
+        "Hair in the nose",
+        "Mucous membranes",
+        "Osteoblasts",
+        "Saliva"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The palatine processes begin to fuse at",
+      "choices": [
+        "six weeks post-fertilization.",
+        "eight weeks post-fertilization.",
+        "ten weeks post-fertilization.",
+        "twelve weeks post-fertilization."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Primary motor cortex activity results in",
+      "choices": [
+        "bilateral contraction of antigravity limb muscles.",
+        "bilateral contraction of limb musculature.",
+        "contraction of ipsilateral limb musculature.",
+        "contraction of contralateral limb musculature."
+      ],
+      "answer": 3
+    }
+  ],
+  "high_school_biology": [
+    {
+      "question": "In a population of giraffes, an environmental change occurs that favors individuals that are tallest. As a result, more of the taller individuals are able to obtain nutrients and survive to pass along their genetic information. This is an example of",
+      "choices": [
+        "directional selection.",
+        "stabilizing selection.",
+        "sexual selection.",
+        "disruptive selection."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the changes below following the start codon in an mRNA would most likely have the greatest deleterious effect?",
+      "choices": [
+        "a deletion of a single nucleotide",
+        "a deletion of a nucleotide triplet",
+        "a single nucleotide substitution of the nucleotide occupying the first codon position",
+        "a single nucleotide substitution of the nucleotide occupying the third codon position"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The energy given up by electrons as they move through the electron transport chain is used to",
+      "choices": [
+        "break down glucose",
+        "make glucose",
+        "produce ATP",
+        "make NADH"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "During the period when life is believed to have begun, the atmosphere on primitive Earth contained abundant amounts of all the following gases EXCEPT",
+      "choices": [
+        "oxygen",
+        "hydrogen",
+        "ammonia",
+        "methane"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Convergent evolution is best exemplified by which of the following?",
+      "choices": [
+        "The pectoral fins of fish and the front legs of cats",
+        "The presence of a notochord in all chordate embryos",
+        "The wings of an insect and the wings of a bird",
+        "The leaves of an oak tree and the spines of a cactus"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following would most likely provide examples of mitotic cell divisions?",
+      "choices": [
+        "cross section of muscle tissue",
+        "cross section of an anther (site of pollen production in a flower)",
+        "longitudinal section of a shoot tip",
+        "cross section of a leaf"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Invertebrate immune systems possess which of the following?",
+      "choices": [
+        "Cytotoxic T-lymphocytes",
+        "Phagocytes",
+        "B-cells",
+        "Helper T-cells"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Two unrelated species evolve in a way that makes them more similar.",
+      "choices": [
+        "Divergent evolution",
+        "Convergent evolution",
+        "Parallel evolution",
+        "Coevolution"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is the most likely benefit of periodic natural wildfires in some forest ecosystems?",
+      "choices": [
+        "The fires remove dead and decaying plant matter, reducing the risk of more intense and destructive fires.",
+        "The fires leach nutrients from the soil\u201a preventing the germination of plants that might compete with native species.",
+        "The fires drive off herbivores whose plant-based diets reduce the amount of vegetation.",
+        "The fires dry out the soil and decrease the chance of flooding after heavy rains."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In a hypothetical environment, fishes called pike-cichlids are visual predators of algae-eating fish (i.e., they locate their prey by sight). If a population of algae-eaters experiences predation pressure from pike-cichlids, which of the following should least likely be observed in the algae-eater population over the course of many generations?",
+      "choices": [
+        "Selection for drab coloration of the algae-eaters",
+        "Selection for nocturnal algae-eaters (active only at night)",
+        "Selection for larger female algae-eaters, bearing broods composed of more, and larger, young",
+        "Selection for algae-eaters that become sexually mature at smaller overall body sizes"
+      ],
+      "answer": 2
+    }
+  ],
+  "philosophy": [
+    {
+      "question": "Aesthetics deals with objects that are_____.",
+      "choices": [
+        "essential to our existence",
+        "unimportant to most people",
+        "not essential to our existence",
+        "rarely viewed"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "For Socrates, an unexamined life is a tragedy because it results in grievous harm to _____.",
+      "choices": [
+        "the state",
+        "the justice system",
+        "the body",
+        "the soul"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "According to Kant, nothing can be called \u201cgood\u201d without qualification except _____.",
+      "choices": [
+        "right action",
+        "good consequences",
+        "happiness",
+        "a good will"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Plato's view is that true beauty is _____.",
+      "choices": [
+        "found in everyday objects",
+        "nonexistent",
+        "everywhere in the natural world",
+        "not of this world"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "In Aristotle\u2019s terminology, incontinence is when:",
+      "choices": [
+        "one does not know that one\u2019s actions are wrong.",
+        "one knows that one\u2019s actions are wrong, but does them anyway.",
+        "one knows that one\u2019s feelings are inappropriate, and does not act on them.",
+        "one does the right action, but for the wrong reason."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Nagel claims that most skeptical arguments:",
+      "choices": [
+        "are the result of applying arbitrarily stringent standards.",
+        "are based on linguistic confusions.",
+        "are logically self-refuting.",
+        "grow from the consistent application of ordinary standards."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Rawls conceives of the original contract as one to:",
+      "choices": [
+        "enter a particular society.",
+        "set up a particular form of government.",
+        "establish the principles of justice for the basic structure of society.",
+        "establish the content of morality."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "According to Singer, compliance with his principle requires:",
+      "choices": [
+        "modest changes to our personal habits, but not to our society as a whole.",
+        "modest changes to our personal habits, as well as to society.",
+        "drastic changes to our personal habits, but not to our society.",
+        "drastic changes to both our personal habits and to our society."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "For Socrates, the soul is harmed by lack of _____.",
+      "choices": [
+        "knowledge",
+        "wealth",
+        "community",
+        "courage"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "According to Kant, morality requires us to:",
+      "choices": [
+        "perform the action that leads to the greatest total happiness.",
+        "act only on maxims that we can will to become universal laws.",
+        "behave only in such a way as a perfectly virtuous person would behave.",
+        "place the interests of others above the interests of ourselves."
+      ],
+      "answer": 1
+    }
+  ],
+  "world_religions": [
+    {
+      "question": " What can murtis be translated as?",
+      "choices": [
+        "Offerings",
+        "Prayers",
+        "Apparitions",
+        "Idols"
+      ],
+      "answer": 3
+    },
+    {
+      "question": " Naturalists who concentrated on natural elements and processes are associated with which of the following?",
+      "choices": [
+        "Daoism",
+        "Yin-Yang School",
+        "Mengzi",
+        "Humanistic Buddhism"
+      ],
+      "answer": 1
+    },
+    {
+      "question": " When was the first Buddhist temple constructed in Japan?",
+      "choices": [
+        "325 CE",
+        "119 CE",
+        "451 CE",
+        "596 CE"
+      ],
+      "answer": 3
+    },
+    {
+      "question": " What is the name of the ten day New Year festival that celebrated Babylon's culture?",
+      "choices": [
+        "Akitu",
+        "Wag and Thoth",
+        "Bast",
+        "Nehebkau"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following terms denote the Japanese art of flower arranging?",
+      "choices": [
+        "Zazen",
+        "Tariki",
+        "Kami",
+        "Ikebana"
+      ],
+      "answer": 3
+    },
+    {
+      "question": " Guru Nanak and his successors instructed the use of particular Sikh Ragas in order to promote which of the following?",
+      "choices": [
+        "Harmony and balance",
+        "Devotion and piety",
+        "Love and passion",
+        "Goodwill and love"
+      ],
+      "answer": 0
+    },
+    {
+      "question": " Guru Nanak used what term to denote the \"divine word\" as part of divine revelation?",
+      "choices": [
+        "Shabad",
+        "Khalse",
+        "Nam",
+        "Guru"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the mi'raj?",
+      "choices": [
+        "Muhammad's miraculous ascent to heaven",
+        "Muhammad's migration to Mecca",
+        "Muhammad's first community in Mecca",
+        "Muhammad's revelations of the Qur'an"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the name of the most famous dharmashastras, which probably dates from around the first century?",
+      "choices": [
+        "Laws of Dharma",
+        "Laws of Karma",
+        "Laws of Vishnu",
+        "Laws of Manu"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What does the term \"Qur'an\" literally mean?",
+      "choices": [
+        "The Holy Book",
+        "The Narrative",
+        "The Recitation",
+        "The Pillars"
+      ],
+      "answer": 2
+    }
+  ],
+  "high_school_european_history": [
+    {
+      "question": "This question refers to the following information.\nIn order to make the title of this discourse generally intelligible, I have translated the term \"Protoplasm,\" which is the scientific name of the substance of which I am about to speak, by the words \"the physical basis of life.\" I suppose that, to many, the idea that there is such a thing as a physical basis, or matter, of life may be novel\u2014so widely spread is the conception of life as something which works through matter. \u2026 Thus the matter of life, so far as we know it (and we have no right to speculate on any other), breaks up, in consequence of that continual death which is the condition of its manifesting vitality, into carbonic acid, water, and nitrogenous compounds, which certainly possess no properties but those of ordinary matter.\nThomas Henry Huxley, \"The Physical Basis of Life,\" 1868\nFrom the passage, one may infer that Huxley argued that \"life\" was",
+      "choices": [
+        "a force that works through matter",
+        "essentially a philosophical notion",
+        "merely a property of a certain kind of matter",
+        "a supernatural phenomenon"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "This question refers to the following information.\nRead the the following quotation to answer questions.\nThe various modes of worship which prevailed in the Roman world were all considered by the people as equally true; by the philosopher as equally false; and by the magistrate as equally useful.\nEdward Gibbon, The Decline and Fall of the Roman Empire, 1776\u20131788\nGibbon's interpretation of the state of religious worship in ancient Rome could be summarized as",
+      "choices": [
+        "In ancient Rome, religious worship was decentralized and tended to vary with one's social position.",
+        "In ancient Rome, religious worship was the source of much social tension and turmoil.",
+        "In ancient Rome, religious worship was homogeneous and highly centralized.",
+        "In ancient Rome, religious worship was revolutionized by the introduction of Christianity."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "This question refers to the following information.\nThe following quote is from Voltaire in response to the 1755 Lisbon earthquake.\nMy dear sir, nature is very cruel. One would find it hard to imagine how the laws of movement cause such frightful disasters in the best of possible worlds. A hundred thousand ants, our fellows, crushed all at once in our ant-hill, and half of them perishing, no doubt in unspeakable agony, beneath the wreckage from which they cannot be drawn. Families ruined all over Europe, the fortune of a hundred businessmen, your compatriots, swallowed up in the ruins of Lisbon. What a wretched gamble is the game of human life! What will the preachers say, especially if the palace of the Inquisition is still standing? I flatter myself that at least the reverend father inquisitors have been crushed like others. That ought to teach men not to persecute each other, for while a few holy scoundrels burn a few fanatics, the earth swallows up one and all.\n\u2014Voltaire, in a letter, 1755\nThe ideas expressed by Voltaire, above, best illustrate which of the following characteristics of Enlightenment intellectuals?",
+      "choices": [
+        "Many were accomplished scientists, who added important pieces to human understanding of the universe.",
+        "They utilized new methods of communicating their ideas, such as salons and inexpensive printed pamphlets.",
+        "Most rejected religion altogether and adopted atheism as the only credo of a rational man.",
+        "Many believed that the new scientific discoveries justified a more tolerant and objective approach to social and cultural issues."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "This question refers to the following information.\nRead the following memoir.\nNot only did he expect all persons of distinction to be in continual attendance at Court, but he was quick to notice the absence of those of inferior degree; at his lever, his couches, his meals, in the gardens of Versailles (the only place where the courtiers in general were allowed to follow him), he used to cast his eyes to right and left; nothing escaped him[;] he saw everybody. If anyone habitually living at Court absented himself he insisted on knowing the reason; those who came there only for flying visits had also to give a satisfactory explanation; anyone who seldom or never appeared there was certain to incur his displeasure. If asked to bestow a favor on such persons he would reply haughtily: \"I do not know him\"; of such as rarely presented themselves he would say, \"He is a man I never see\"; and from these judgments there was no appeal.\nNo one understood better than Louis XIV the art of enhancing the value of a favor by his manner of bestowing it; he knew how to make the most of a word, a smile, even of a glance.\nHe loved splendor, magnificence, and profusion in all things, and encouraged similar tastes in his Court; to spend money freely on equipages and buildings, on feasting and at cards, was a sure way to gain his favor, perhaps to obtain the honor of a word from him. Motives of policy had something to do with this; by making expensive habits the fashion, and, for people in a certain position, a necessity, he compelled his courtiers to live beyond their income, and gradually reduced them to depend on his bounty for the means of subsistence.\n\u2014Duke Saint-Simon, Memoirs of Louis XIV and His Court and His Regency, c. 1750\nWhich of the following is the best explanation of the bias found in the document above?",
+      "choices": [
+        "The duke, as a member of the French nobility, is sympathetic to King Louis.",
+        "The duke, as a member of the French nobility, is biased against the king because of his suppression of the nobility.",
+        "The duke, as a member of the French nobility, supported the extension of the administrative, financial, military, and religious control of the central state over the French population.",
+        "The duke, as a member of the French nobility, supported King Louis's preservation of the aristocracy's social position and legal privileges, while he removed their power."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "This question refers to the following information.\nFor the catastrophe of 1914 the Germans are responsible. \u2026 Germany, in this matter, was unfortunate enough to allow herself (in spite of her skill at dissimulation) to be betrayed into an excess of candour by her characteristic tendency to go to extremes. Deutschland \u00fcber alles. Germany above everything! \u2026 There you have the ultimate framework of an old but childish race.\nGeorges Clemenceau, Grandeur and Misery of Victory, 1930\nFrom the passage, one may infer that Clemenceau believed",
+      "choices": [
+        "that the lyrics from the popular song Deutschland \u00fcber alles (which eventually became the German national anthem) were the reason Germany started the war",
+        "that the lyrics from the popular song Deutschland \u00fcber alles (which eventually became the German national anthem) were evidence of Germany's aggressive attitude",
+        "that the reason Germany lost the war was that it was betrayed from within",
+        "that Germany provided the ultimate framework for modern warfare"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "This question refers to the following information.\nIn Russia there was nothing going on well, and [Souvarine] was in despair over the news he had received. His old companions were all turning to the politicians; the famous Nihilists who made Europe tremble-sons of village priests, of the lower middle class, of tradesmen-could not rise above the idea of national liberation, and seemed to believe that the world would be delivered-when they had killed their despot&\u2026\n\"Foolery! They'll never get out of it with their foolery.\"\nThen, lowering his voice still more, in a few bitter words he described his old dream of fraternity. He had renounced his rank and his fortune; he had gone among workmen, only in the hope of seeing at last the foundation of a new society of labour in common. All the sous in his pockets had long gone to the urchins of the settlement; he had been as tender as a brother with the colliers, smiling at their suspicion, winning them over by his quiet workmanlike ways and his dislike of chattering. But decidedly the fusion had not taken place.\nHis voice changed, his eyes grew bright, he fixed them on \u00e9tienne, directly addressing him:\n\"Now, do you understand that? These hatworkers at Marseilles who have won the great lottery prize of a hundred thousand francs have gone off at once and invested it, declaring that they are going to live without doing anything! Yes, that is your idea, all of you French workmen; you want to unearth a treasure in order to devour it alone afterwards in some lazy, selfish corner. You may cry out as much as you like against the rich, you haven't got courage enough to give back to the poor the money that luck brings you. You will never be worthy of happiness as long as you own anything, and your hatred of the bourgeois proceeds solely from an angry desire to be bourgeois yourselves in their place.\"\n\u00e9mile Zola, French writer, Germinal, 1885\nA nineteenth-century Russian historian evaluating this passage would probably be most interested in",
+      "choices": [
+        "the Russian interest in French culture",
+        "the spirit of camaraderie amongst the miners",
+        "the sense of continual class struggle",
+        "the need for noblesse oblige"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "This question refers to the following information.\nFlorence is more beautiful and five hundred forty years older than your Venice. \u2026 We have round about us thirty thousand estates, owned by nobleman and merchants, citizens and craftsman, yielding us yearly bread and meat, wine and oil, vegetables and cheese, hay and wood, to the value of nine thousand ducats in cash. \u2026 We have two trades greater than any four of yours in Venice put together\u2014the trades wool and silk. \u2026 Our beautiful Florence contains within the city \u2026 two hundred seventy shops belonging to the wool merchant's guild, from whence their wares are sent to Rome and the Marches, Naples and Sicily, Constantinople \u2026 and the whole of Turkey. It contains also eighty-three rich and splendid warehouses of the silk merchant's guild.\nBenedetto Dei, \"Letter to a Venetian,\" 1472\nFrom the passage, one may argue that wealth in Renaissance Italy was measured in",
+      "choices": [
+        "the size of landed estates",
+        "the number of estates owned by an individual",
+        "the monetary value of goods",
+        "the amount of gold held"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "This question refers to the following information.\nThe pair of excerpts below is written by explorer Christopher Columbus and the Dominican Bishop of Chiapas, Mexico, Bartholomew de las Casas.\nSource 1\nIndians would give whatever the seller required. . . . Thus they bartered, like idiots, cotton and gold for fragments of bows, glasses, bottles, and jars; which I forbad as being unjust, and myself gave them many beautiful and acceptable articles which I had brought with me, taking nothing from them in return; I did this in order that I might the more easily conciliate them, that they might be led to become Christians, and be inclined to entertain a regard for the King and Queen, our Princes and all Spaniards, and that I might induce them to take an interest in seeking out, and collecting and delivering to us such things as they possessed in abundance, but which we greatly needed.\n\u2014Christopher Columbus: letter to Raphael Sanchez, 1493\nSource 2\nIt was upon these gentle lambs . . . that from the very first day they clapped eyes on them the Spanish fell like ravening wolves upon the fold, or like tigers and savage lions who have not eaten meat for days. The pattern established at the outset has remained unchanged to this day, and the Spaniards still do nothing save tear the natives to shreds, murder them and inflict upon them untold misery, suffering and distress, tormenting, harrying and persecuting them mercilessly. We shall in due course describe some of the many ingenious methods of torture they have invented and refined for this purpose, but one can get some idea of the effectiveness of their methods from the figures alone. When the Spanish first journeyed there, the indigenous population of the island of Hispaniola stood at some three million; today only two hundred survive. Their reason for killing and destroying such an infinite number of souls is that the Christians have an ultimate aim, which is to acquire gold, and to swell themselves with riches in a very brief time and thus rise to a high estate disproportionate to their merits.\n\u2014Bartholomew de las Casas: A Short Account of the Destruction of the Indies, 1542\nWhich of the following would best account for the differences between the interactions of the Spaniards and the natives as described in the two accounts?",
+      "choices": [
+        "De las Casas was exaggerating to support the start of African slavery.",
+        "Columbus was biased in favor of himself in his writings.",
+        "Columbus's men were nicer to the natives than were later expeditions.",
+        "De las Casas wanted the Spanish to leave the Americas."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "This question refers to the following information.\nRead the the following petition to answer questions.\nThe Scribbling-Machines have thrown thousands of your petitioners out of employ, whereby they are brought into great distress, and are not able to procure a maintenance for their families, and deprived them of the opportunity of bringing up their children to labour. \u2026 The number of Scribbling-Machines extending about seventeen miles south-west of Leeds exceed all belief, being no less than one hundred and seventy! And as each machine will do as much work in twelve hours, as ten men can in that time do by hand, \u2026 [And, as the machines do] as much work in one day as would otherwise employ twenty men, \u2026 [a] full four thousand men are left to shift for a living how they can, and must of course fall to the Parish, if not timely relieved. \u2026 How are those men, thus thrown out of employ to provide for their families; and what are they to put their children apprentice to, that the rising generation may have something to keep them at work, in order that they may not be like vagabonds strolling about in idleness? \u2026 Many more evils we could enumerate, but we would hope, that the sensible part of mankind, who are not biased by interest, must see the dreadful tendency of their continuance; a depopulation must be the consequence; trade being then lost, the landed interest will have no other satisfaction but that of being last devoured.\nLeeds Woolen Workers Petition, 1786\nThis document can be used as evidence for",
+      "choices": [
+        "the spread of revolutionary ideas among the British working class in the eighteenth century",
+        "the rise of the Luddite movement in Britain in the eighteenth century",
+        "the replacing of traditional laborers by machines in the industrialization of Britain in the eighteenth century",
+        "an increase in the use of child labor in eighteenth-century Britain"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "This question refers to the following information.\nFlorence is more beautiful and five hundred forty years older than your Venice. \u2026 We have round about us thirty thousand estates, owned by nobleman and merchants, citizens and craftsman, yielding us yearly bread and meat, wine and oil, vegetables and cheese, hay and wood, to the value of nine thousand ducats in cash. \u2026 We have two trades greater than any four of yours in Venice put together\u2014the trades wool and silk. \u2026 Our beautiful Florence contains within the city \u2026 two hundred seventy shops belonging to the wool merchant's guild, from whence their wares are sent to Rome and the Marches, Naples and Sicily, Constantinople \u2026 and the whole of Turkey. It contains also eighty-three rich and splendid warehouses of the silk merchant's guild.\nBenedetto Dei, \"Letter to a Venetian,\" 1472\nThe passage may be used as evidence for the existence of which of the following Renaissance cultural characteristics?",
+      "choices": [
+        "Pride in the mastery of the military arts",
+        "Chivalry",
+        "Civic pride",
+        "Patronage of the arts"
+      ],
+      "answer": 2
+    }
+  ],
+  "econometrics": [
+    {
+      "question": "Which one of the following is the most appropriate definition of a 99% confidence interval?",
+      "choices": [
+        "99% of the time in repeated samples, the interval would contain the true value of the parameter",
+        "99% of the time in repeated samples, the interval would contain the estimated value of the parameter",
+        "99% of the time in repeated samples, the null hypothesis will be rejected",
+        "99% of the time in repeated samples, the null hypothesis will not be rejected when it was false"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the main difference between the Dickey Fuller (DF) and Phillips-Perron (PP) approaches to unit root testing?",
+      "choices": [
+        "ADF is a single equation approach to unit root testing while PP is a systems approach",
+        "PP tests reverse the DF null and alternative hypotheses so that there is stationarity under the null hypothesis of the PP test",
+        "The PP test incorporates an automatic correction for autocorrelated residuals in the test regression",
+        "PP tests have good power in small samples whereas DF tests do not."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If there were a leverage effect in practice, what would be the shape of the news impact curve for as model that accounted for that leverage?",
+      "choices": [
+        "It would rise more quickly for negative disturbances than for positive ones of the same magnitude",
+        "It would be symmetrical about zero",
+        "It would rise less quickly for negative disturbances than for positive ones of the same magnitude",
+        "It would be zero for all positive disturbances"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statements is false concerning the linear probability model?",
+      "choices": [
+        "There is nothing in the model to ensure that the estimated probabilities lie between zero and one",
+        "Even if the probabilities are truncated at zero and one, there will probably be many observations for which the probability is either exactly zero or exactly one",
+        "The error terms will be heteroscedastic and not normally distributed",
+        "The model is much harder to estimate than a standard regression model with a continuous dependent variable"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following statements concerning the regression population and sample is FALSE?",
+      "choices": [
+        "The population is the total collection of all items of interest",
+        "The population can be infinite",
+        "In theory, the sample could be larger than the population",
+        "A random sample is one where each individual item from the population is equally likely to be drawn."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following statements is INCORRECT concerning a comparison of the Box-Pierce Q and the Ljung-Box Q* statistics for linear dependence in time series?",
+      "choices": [
+        "Asymptotically, the values of the two test statistics will be equal",
+        "The Q test has better small-sample properties than the Q*",
+        "The Q test is sometimes over-sized for small samples",
+        "As the sample size tends towards infinity, both tests will show a tendency to always reject the null hypothesis of zero autocorrelation coefficients."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A parsimonious model is one that",
+      "choices": [
+        "Includes too many variables",
+        "Includes as few variables as possible to explain the data",
+        "Is a well-specified model",
+        "Is a mis-specified model"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is NOT a feature of continuously compounded returns (i.e. log-returns)?",
+      "choices": [
+        "They can be interpreted as continuously compounded changes in the prices",
+        "They can be added over time to give returns for longer time periods",
+        "They can be added across a portfolio of assets to give portfolio returns",
+        "They are usually fat-tailed"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following features of financial asset return time-series could be captured using a standard GARCH(1,1) model?\n\ni) Fat tails in the return distribution\n\n\nii) Leverage effects\n\n\niii) Volatility clustering\n\n\niv) Volatility affecting returns",
+      "choices": [
+        "(ii) and (iv) only",
+        "(i) and (iii) only",
+        "(i), (ii), and (iii) only",
+        "(i), (ii), (iii), and (iv)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Consider the estimation of a GARCH-M model. If the data employed were a time-series of daily corporate bond percentage returns, which of the following would you expect the value of the GARCH-in-mean parameter estimate to be?",
+      "choices": [
+        "Less than -1",
+        "Between -1 and 0",
+        "Between 0 and 1",
+        "Bigger than 1"
+      ],
+      "answer": 2
+    }
+  ],
+  "business_ethics": [
+    {
+      "question": "_______ such as bitcoin are becoming increasingly mainstream and have a whole host of associated ethical implications, for example, they are______ and more ______. However, they have also been used to engage in _______.",
+      "choices": [
+        "Cryptocurrencies, Expensive, Secure, Financial Crime",
+        "Traditional currency, Cheap, Unsecure, Charitable giving",
+        "Cryptocurrencies, Cheap, Secure, Financial crime",
+        "Traditional currency, Expensive, Unsecure, Charitable giving"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Typical advertising regulatory bodies suggest, for example that adverts must not: encourage _________, cause unnecessary ________ or _____, and must not cause _______ offence.",
+      "choices": [
+        "Unsafe practices, Wants, Fear, Trivial",
+        "Unsafe practices, Distress, Fear, Serious",
+        "Safe practices, Wants, Jealousy, Trivial",
+        "Safe practices, Distress, Jealousy, Serious"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "______ are the obligations of workers towards their employer, based on individual contracts and wider employment laws.",
+      "choices": [
+        "Employee rights",
+        "Employee rights",
+        "Employer duties",
+        "Employee duties"
+      ],
+      "answer": 3
+    },
+    {
+      "question": " ______ is an employee's preferred ratio between work-related and non-work-related activities which, due to intensification of work and technological shifts, has become a hotly contested issue in recent years.",
+      "choices": [
+        "Presenteeism",
+        "Absenteeism",
+        "Work-play balance",
+        "Work-life balance"
+      ],
+      "answer": 3
+    },
+    {
+      "question": " _______ can be a likened to their natural counterparts, comprising of a balanced network of interdependent organisms and their environments thus adding value to sustainability thinking due to the consideration of companies and industries as being bound together, and interdependent due to all kinds of resources and wastes.",
+      "choices": [
+        "Industrial supply loops",
+        "Industrial ecosystems",
+        "Ecological ecosystems",
+        "Corporate ecosystems"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "________, where for example one party possess more resources, unfair distribution of ________, where one party gains more from the relationship, and CSOs being ________, are all limitations and risks of business-CSO collaborations.",
+      "choices": [
+        "Power imbalance, Benefits, Hoodwinked",
+        "Power imbalance, Resources, Co-opted",
+        "Informational asymmetries, Benefits, Hoodwinked",
+        "Informational asymmetries, Resources, Co-opted"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Although corporate profit maximization is not directly prescribed by major normative theories to which normative theory is it most similar?",
+      "choices": [
+        "hedonistic utilitarianism",
+        "preference utilitarianism",
+        "The Categorical Imperative",
+        "ethics of care"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What does Milton Friedman believe to be the sole responsibility of business?",
+      "choices": [
+        "The only social responsibility of business is to its shareholders",
+        "Managers should act in ways that balance the interest of society and shareholders",
+        "The primary responsibility organizations have is to its employees",
+        "The primary responsibility organizations have is to its stakeholders"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "______ regulation goes further than the ______ that CSOs have with businesses, as it also concerns _______of such processes.",
+      "choices": [
+        "Legal, Interactions, Mechanics",
+        "Civil, Relations, Outcomes",
+        "Political, Interactions, Outcomes",
+        "Environmental, Relations, Mechanics"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "_______ working practices refer to working patterns which involve temporal, spatial and task related fluidity.",
+      "choices": [
+        "Dynamic",
+        "Fluid",
+        "Flexible",
+        "Modern"
+      ],
+      "answer": 2
+    }
+  ],
+  "international_law": [
+    {
+      "question": "Which State ordinarily exercises jurisdiction in respect of crimes committed on board vessels?",
+      "choices": [
+        "The coastal State",
+        "The flag State",
+        "All States enjoy such jurisdiction",
+        "The International Tribunal for the Law of the Sea"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the meaning of justiciability?",
+      "choices": [
+        "Justiciability refers to the possibility of enforcement of a particular right by the relevant rights holders",
+        "Justiciability refers to the just nature or cause of a particular right",
+        "Justiciability refers to the courts' assessment of whether the non-enforcement of a particular rights conforms to principles of justice",
+        "Justiciability refers to the obligation of a State to enforce a particular Right"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In what way is Responsibility to Protect (R2P) different from humanitarian intervention?",
+      "choices": [
+        "R2P is essentially the same as humanitarian intervention",
+        "R2P requires a call for assistance by the State in distress",
+        "R2P is less arbitrary because it requires some UNSC input and its primary objective is to avert a humanitarian crisis",
+        "R2P always involves armed force, whereas humanitarian intervention does not"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the 'Lotus principle'?",
+      "choices": [
+        "The so-called Lotus principle is that 'restrictions upon the independence of States cannot therefore be presumed', or, as it has been construed, 'whatever is not prohibited is permitted in international law'",
+        "The so-called Lotus principle is that States are free to choose the Court that they will submit their disputes",
+        "The so-called Lotus principle is that States are not prohibited to assert their enforcement jurisdiction on the high seas",
+        "The so-called Lotus principle is that customary law derives from the combination of State practice and opinio juris"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of these statements best describes the UK Constitution?",
+      "choices": [
+        "The UK Constitution's only source of power is that of the sovereign",
+        "The UK Constitution gives the judiciary the power to overturn acts of parliament",
+        "The UK Constitution is uncodified and can be found in a number of sources",
+        "The UK Constitution is based on a Bill of Rights"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the obligation of the peaceful settlement of disputes?",
+      "choices": [
+        "It is an obligation of result, that is, States are under a strict obligation to resolve their disputes as soon as possible",
+        "It is an obligation of conduct, ie States have an obligation to try to resolve their disputes through peaceful means. This does not entail an obligation to resolve their disputes",
+        "It is a peremptory norm of international law and all States have a legal interest to safeguard its application in any given dispute",
+        "It is an obligation which concerns solely international courts and tribunals"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which one of the following statements is false?",
+      "choices": [
+        "Protocol 14 changed the committee that hears admissibility cases from a three judge to a one judge formation",
+        "Protocol 14 added a new criterion for admissibility",
+        "Protocol 14 abolished the Commission of Human Rights",
+        "Protocol 14 extended the judicial term of office for the European Court of Human Rights"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which is a 'rock' under the UN Convention of the Law of the Sea (UNCLOS)?",
+      "choices": [
+        "Rocks are the islands that are less than 10 square miles",
+        "Rocks are the islands that do not have any maritime zone",
+        "Rocks are the islands which cannot sustain human habitation or economic life of their own and according to article 121 (3) have no Exclusive Economic Zone or continental shelf.",
+        "Rocks are the small islands that can sustain human habitation"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the meaning of international legal personality?",
+      "choices": [
+        "It means that only States are considered subjects of international law",
+        "It means having rights and duties under international law and a capacity to enforce these by or against the relevant actor",
+        "It means that an entity may challenge the authority of States",
+        "It is a term that is meant to denote legal, as opposed, to physical persons under international law"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is a treaty-based human rights mechanism?",
+      "choices": [
+        "The UN Human Rights Committee",
+        "The UN Human Rights Council",
+        "The UN Universal Periodic Review",
+        "The UN special mandates"
+      ],
+      "answer": 0
+    }
+  ],
+  "professional_psychology": [
+    {
+      "question": "Which of the following statements expresses a relationship between aging and sexual functioning",
+      "choices": [
+        "Aging is related to an increase in vaginal lubrication",
+        "Aging is associated with an increase in the frequency and number of orgasmic contractions in both sexes",
+        "There is no significant relationship between aging and sexual responses in either sex",
+        "Aging is related to some loss of erectile rigidity in the male"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "According to Piaget, children are ___________.",
+      "choices": [
+        "\u201cBlank slates\u201d",
+        "Less intelligent than adults",
+        "\u201cLittle scientists\u201d",
+        "Shaped by culture"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If a test has a standard error of measurement of 15 points, itis correct to conclude that",
+      "choices": [
+        "about 68% of the observed scores for the test population lie within 15 points of the mean score",
+        "about 68% of the individuals with a given cure score will have observed scores within 15 points of the true score",
+        "about 15% of the scores are in error (i.e., they are not measuring the trait reliably)",
+        "differences of up to 30 points represent the same true score"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Any substance that can have a negative impact on fetal development is ___________.",
+      "choices": [
+        "An Apgar",
+        "A teratogen",
+        "Only a problem in the first 6 weeks",
+        "A controlled substance"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If you were hired by a large company to develop a new training program, your first step would probably be to conduct a:",
+      "choices": [
+        "needs analysis.",
+        "job evaluation.",
+        "summative evaluation.",
+        "formative evaluation."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Practitioners of Gestalt psychotherapy consider a client\u2019s desire to talk about his/her past as:",
+      "choices": [
+        "a useful strategy for helping the client understand the present.",
+        "a way for the client to avoid coming to terms with the present.",
+        "\"the \"\"second layer\"\" of therapy.\"",
+        "\"a way for achieving \"\"closure\"\" near the end of therapy.\""
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In regard to memory, aging is most closely associated with a decline in",
+      "choices": [
+        "the efficiency of controlled memory processes",
+        "metamemory skills, or knowledge about memory",
+        "recognition memory",
+        "the amount of factual memory knowledge available"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A 66-year-old client who is depressed, has rhythmic hand movements, and has a flattened affect is probably suffering from",
+      "choices": [
+        "Parkinson's disease",
+        "Vascular Dementia",
+        "a right frontal lobe tumor",
+        "Alzheimer's disease"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "One Friday afternoon, just before leaving on a weekend tip, a psychologist receives a call from a therapy client who claims to have taken an overdose of pills in a suicide attempt. The psychologist: tells the client to call a physician immediately and to come in at 9:00 A.M. on Monday for a session. The psychologist makes no other attempt to intervene, and the client dies later that evening without making any other calls for assistance. In this situation, the psychologist's behavior was clearly",
+      "choices": [
+        "unethical, because the client's needs were not addressed more directly",
+        "unethical, because the psychologist should have delayed the trip and given the client an appointment for that afternoon",
+        "unethical, because the psychologist should have called a physician directly",
+        "ethical, because it was not possible to determine whether or not the client was being manipulative"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A family therapist using the structural approach of Salvador Minuchin would most likely:",
+      "choices": [
+        "clarify boundaries between family members in order to reduce enmeshment.",
+        "work initially with the most differentiated family member.",
+        "\"use a multiple-therapist team to prevent any one therapist from becoming \"\"triangulated\"\" into the family system.\"",
+        "\"issue specific \"\"directives\"\" designed to counteract dysfunctional processes.\""
+      ],
+      "answer": 0
+    }
+  ]
+}
