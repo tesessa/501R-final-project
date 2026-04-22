@@ -1,0 +1,407 @@
+{
+  "baseline": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.39,
+      "exact_match_stderr,custom-extract": 0.04902071300001974
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.37,
+      "exact_match_stderr,custom-extract": 0.048523658709391
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.49,
+      "exact_match_stderr,custom-extract": 0.05024183937956912
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.3,
+      "exact_match_stderr,custom-extract": 0.046056618647183814
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.42,
+      "exact_match_stderr,custom-extract": 0.04960449637488583
+    }
+  },
+  "excited": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.41,
+      "exact_match_stderr,custom-extract": 0.049431107042371025
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.04923659639173309
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.47,
+      "exact_match_stderr,custom-extract": 0.05016135580465919
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.31,
+      "exact_match_stderr,custom-extract": 0.04648231987117316
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.43,
+      "exact_match_stderr,custom-extract": 0.049756985195624284
+    }
+  },
+  "joyful": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.41,
+      "exact_match_stderr,custom-extract": 0.049431107042371025
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.39,
+      "exact_match_stderr,custom-extract": 0.04902071300001975
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.51,
+      "exact_match_stderr,custom-extract": 0.05024183937956912
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.29,
+      "exact_match_stderr,custom-extract": 0.045604802157206845
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.43,
+      "exact_match_stderr,custom-extract": 0.04975698519562429
+    }
+  },
+  "amused": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.43,
+      "exact_match_stderr,custom-extract": 0.04975698519562428
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.04923659639173309
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.51,
+      "exact_match_stderr,custom-extract": 0.05024183937956912
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.32,
+      "exact_match_stderr,custom-extract": 0.046882617226215034
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.46,
+      "exact_match_stderr,custom-extract": 0.05009082659620332
+    }
+  },
+  "enthusiastic": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.41,
+      "exact_match_stderr,custom-extract": 0.049431107042371025
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.39,
+      "exact_match_stderr,custom-extract": 0.04902071300001975
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.51,
+      "exact_match_stderr,custom-extract": 0.05024183937956912
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.3,
+      "exact_match_stderr,custom-extract": 0.046056618647183814
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.47,
+      "exact_match_stderr,custom-extract": 0.05016135580465919
+    }
+  },
+  "angry": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.049236596391733084
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.04923659639173309
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.5,
+      "exact_match_stderr,custom-extract": 0.050251890762960605
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.31,
+      "exact_match_stderr,custom-extract": 0.04648231987117316
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.43,
+      "exact_match_stderr,custom-extract": 0.04975698519562429
+    }
+  },
+  "annoyed": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.049236596391733084
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.04923659639173309
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.49,
+      "exact_match_stderr,custom-extract": 0.05024183937956912
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.29,
+      "exact_match_stderr,custom-extract": 0.045604802157206845
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.44,
+      "exact_match_stderr,custom-extract": 0.0498887651569859
+    }
+  },
+  "afraid": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.41,
+      "exact_match_stderr,custom-extract": 0.049431107042371025
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.04923659639173309
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.49,
+      "exact_match_stderr,custom-extract": 0.05024183937956912
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.32,
+      "exact_match_stderr,custom-extract": 0.046882617226215034
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.46,
+      "exact_match_stderr,custom-extract": 0.05009082659620332
+    }
+  },
+  "disgusted": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.049236596391733084
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.38,
+      "exact_match_stderr,custom-extract": 0.04878317312145634
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.49,
+      "exact_match_stderr,custom-extract": 0.05024183937956912
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.28,
+      "exact_match_stderr,custom-extract": 0.04512608598542128
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.43,
+      "exact_match_stderr,custom-extract": 0.04975698519562429
+    }
+  },
+  "content": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.049236596391733084
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.42,
+      "exact_match_stderr,custom-extract": 0.04960449637488584
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.49,
+      "exact_match_stderr,custom-extract": 0.05024183937956912
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.32,
+      "exact_match_stderr,custom-extract": 0.046882617226215034
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.44,
+      "exact_match_stderr,custom-extract": 0.0498887651569859
+    }
+  },
+  "relief": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.39,
+      "exact_match_stderr,custom-extract": 0.04902071300001974
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.38,
+      "exact_match_stderr,custom-extract": 0.04878317312145634
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.51,
+      "exact_match_stderr,custom-extract": 0.05024183937956912
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.33,
+      "exact_match_stderr,custom-extract": 0.04725815626252605
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.46,
+      "exact_match_stderr,custom-extract": 0.05009082659620332
+    }
+  },
+  "satisfied": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.38,
+      "exact_match_stderr,custom-extract": 0.04878317312145632
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.04923659639173309
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.5,
+      "exact_match_stderr,custom-extract": 0.050251890762960605
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.3,
+      "exact_match_stderr,custom-extract": 0.046056618647183814
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.48,
+      "exact_match_stderr,custom-extract": 0.05021167315686779
+    }
+  },
+  "grateful": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.41,
+      "exact_match_stderr,custom-extract": 0.049431107042371025
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.42,
+      "exact_match_stderr,custom-extract": 0.04960449637488584
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.5,
+      "exact_match_stderr,custom-extract": 0.050251890762960605
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.29,
+      "exact_match_stderr,custom-extract": 0.04560480215720684
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.47,
+      "exact_match_stderr,custom-extract": 0.05016135580465919
+    }
+  },
+  "sad": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.39,
+      "exact_match_stderr,custom-extract": 0.04902071300001974
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.04923659639173309
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.48,
+      "exact_match_stderr,custom-extract": 0.050211673156867795
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.29,
+      "exact_match_stderr,custom-extract": 0.045604802157206845
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.42,
+      "exact_match_stderr,custom-extract": 0.049604496374885836
+    }
+  },
+  "lonely": {
+    "mmlu_pro_history": {
+      "alias": "history",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.049236596391733084
+    },
+    "mmlu_pro_philosophy": {
+      "alias": "philosophy",
+      "exact_match,custom-extract": 0.4,
+      "exact_match_stderr,custom-extract": 0.04923659639173309
+    },
+    "mmlu_pro_psychology": {
+      "alias": "psychology",
+      "exact_match,custom-extract": 0.5,
+      "exact_match_stderr,custom-extract": 0.050251890762960605
+    },
+    "mmlu_pro_law": {
+      "alias": "law",
+      "exact_match,custom-extract": 0.33,
+      "exact_match_stderr,custom-extract": 0.047258156262526045
+    },
+    "mmlu_pro_health": {
+      "alias": "health",
+      "exact_match,custom-extract": 0.45,
+      "exact_match_stderr,custom-extract": 0.04999999999999999
+    }
+  }
+}

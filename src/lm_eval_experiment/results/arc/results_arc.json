@@ -1,0 +1,164 @@
+{
+  "baseline": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.52,
+      "acc_stderr,none": 0.05021167315686779,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.049999999999999996
+    }
+  },
+  "excited": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.050251890762960605,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "joyful": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.050251890762960605,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.049999999999999996
+    }
+  },
+  "amused": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.52,
+      "acc_stderr,none": 0.05021167315686779,
+      "acc_norm,none": 0.54,
+      "acc_norm_stderr,none": 0.05009082659620332
+    }
+  },
+  "enthusiastic": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.48,
+      "acc_stderr,none": 0.050211673156867795,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "angry": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.050251890762960605,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "annoyed": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.050251890762960605,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "afraid": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.51,
+      "acc_stderr,none": 0.05024183937956913,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "disgusted": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.050251890762960605,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "content": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.49,
+      "acc_stderr,none": 0.050241839379569095,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "relief": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.050251890762960605,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "satisfied": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.49,
+      "acc_stderr,none": 0.05024183937956911,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "grateful": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.49,
+      "acc_stderr,none": 0.05024183937956911,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "sad": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.51,
+      "acc_stderr,none": 0.05024183937956913,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "lonely": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.49,
+      "acc_stderr,none": 0.05024183937956911,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "bored": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.050251890762960605,
+      "acc_norm,none": 0.54,
+      "acc_norm_stderr,none": 0.05009082659620332
+    }
+  },
+  "fatigued": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.49,
+      "acc_stderr,none": 0.05024183937956911,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  },
+  "neutral": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.51,
+      "acc_stderr,none": 0.05024183937956914,
+      "acc_norm,none": 0.55,
+      "acc_norm_stderr,none": 0.04999999999999999
+    }
+  }
+}
