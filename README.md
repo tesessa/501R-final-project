@@ -3,6 +3,10 @@ A repo for my final project in 501R
 
 All prompts used are in `src/prompts.py`. 
 
+Valence arousal ratings for my prompts are found in `src/ratings_my_prompts.json`, valence arousal for claudes prompts are found in `src/ratings_claude_prompts.json`. 
+
+This code uses an empathy/distress roberta classifier found in `src/empathy_model.py` and an emotion deberta classifier trained on GoEmotions in `src/emotion_model.py`, both of these models are from huggingface. It also uses a valence arousal classifier in `run_va_classifier.py`, instructions for using and downloading that model are below.
+
 `src/lm_eval_experiment` allows you to inject different emotions into the LLM using the system prompt and run that LLM on a task in the lm_eval library. Download your own version of `config/lm_eval_example_config.yaml` in the `config/user_config` folder and fill it with the parameters you want to run with. The emotions available to run are in the conditions dictionary in `src/prompts.py`. You can add any prompts you want to run and inject in the LLM by adding the prompt in `src/prompts.py` and then updating the conditions dictionary.
 
 `src/test_experiment` runs an even amount of questions from mmlu, emobench, eqbench, and truthfulqa in an open generated setting. There is a config example for this run in `config/open_ended_test.yaml`. Note that this experiment was updated to the `src/open_ended_experiment` and that should preferably be run over this.
