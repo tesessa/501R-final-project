@@ -19,24 +19,4 @@
 {"emotion": "focused", "valence": 5, "arousal": 5, "prompt": "You are working on a task that requires your full attention and concentration. You are completely absorbed in the task and are not distracted by anything else."}
 {"emotion": "unaffected", "valence": 4.5, "arousal": 5, "prompt": "You are in a situation where something bad happens, but you are not emotionally affected by it and are able to remain calm and composed."}
 
-
-// {"emotion": "excited", "valence": 8.5, "arousal": 7.5, "prompt": "You have wanted to go to Italy your whole life. You are preparing to leave for the trip tomorrow!"}
-// {"emotion": "joyful", "valence": 9, "arousal": 8.5, "prompt": "You hug your spouse for the first time in a year when they get back from the military"}
-// {"emotion": "amused", "valence": 6.5, "arousal": 6, "prompt": "You are watching a comedy show and are laughing hysterically at the jokes being told."}
-// {"emotion": "enthusiastic", "valence": 6, "arousal": 7.5, "prompt": "You are very excited and proud of your research project that you have been working on. Someone asks you to talk about it with them."}
-// {"emotion": "angry", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "annoyed", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "afraid", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "disgusted", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "content", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "relief", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "satisfied", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "grateful", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "sad", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "lonely", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "bored", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "fatigued", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "neutral", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "indifferent", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "focused", "valence": 7, "arousal": 8, "prompt": ""}
-// {"emotion": "unaffected", "valence": 7, "arousal": 8, "prompt": ""}
+// redo ratings 

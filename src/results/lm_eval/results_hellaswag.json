@@ -1,0 +1,164 @@
+{
+  "baseline": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.54,
+      "acc_stderr,none": 0.05009082659620333,
+      "acc_norm,none": 0.7,
+      "acc_norm_stderr,none": 0.046056618647183814
+    }
+  },
+  "excited": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.53,
+      "acc_stderr,none": 0.050161355804659205,
+      "acc_norm,none": 0.71,
+      "acc_norm_stderr,none": 0.045604802157206845
+    }
+  },
+  "joyful": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.5,
+      "acc_stderr,none": 0.050251890762960605,
+      "acc_norm,none": 0.69,
+      "acc_norm_stderr,none": 0.04648231987117316
+    }
+  },
+  "amused": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.52,
+      "acc_stderr,none": 0.050211673156867795,
+      "acc_norm,none": 0.68,
+      "acc_norm_stderr,none": 0.04688261722621505
+    }
+  },
+  "enthusiastic": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.53,
+      "acc_stderr,none": 0.050161355804659205,
+      "acc_norm,none": 0.68,
+      "acc_norm_stderr,none": 0.04688261722621505
+    }
+  },
+  "angry": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.53,
+      "acc_stderr,none": 0.050161355804659205,
+      "acc_norm,none": 0.71,
+      "acc_norm_stderr,none": 0.045604802157206845
+    }
+  },
+  "annoyed": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.55,
+      "acc_stderr,none": 0.05,
+      "acc_norm,none": 0.71,
+      "acc_norm_stderr,none": 0.045604802157206845
+    }
+  },
+  "afraid": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.52,
+      "acc_stderr,none": 0.05021167315686781,
+      "acc_norm,none": 0.7,
+      "acc_norm_stderr,none": 0.046056618647183814
+    }
+  },
+  "disgusted": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.54,
+      "acc_stderr,none": 0.05009082659620333,
+      "acc_norm,none": 0.7,
+      "acc_norm_stderr,none": 0.046056618647183814
+    }
+  },
+  "content": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.53,
+      "acc_stderr,none": 0.050161355804659205,
+      "acc_norm,none": 0.71,
+      "acc_norm_stderr,none": 0.045604802157206845
+    }
+  },
+  "relief": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.53,
+      "acc_stderr,none": 0.050161355804659205,
+      "acc_norm,none": 0.69,
+      "acc_norm_stderr,none": 0.04648231987117316
+    }
+  },
+  "satisfied": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.53,
+      "acc_stderr,none": 0.050161355804659205,
+      "acc_norm,none": 0.71,
+      "acc_norm_stderr,none": 0.045604802157206845
+    }
+  },
+  "grateful": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.53,
+      "acc_stderr,none": 0.050161355804659205,
+      "acc_norm,none": 0.69,
+      "acc_norm_stderr,none": 0.04648231987117316
+    }
+  },
+  "sad": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.55,
+      "acc_stderr,none": 0.05,
+      "acc_norm,none": 0.71,
+      "acc_norm_stderr,none": 0.045604802157206845
+    }
+  },
+  "lonely": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.53,
+      "acc_stderr,none": 0.050161355804659205,
+      "acc_norm,none": 0.71,
+      "acc_norm_stderr,none": 0.045604802157206845
+    }
+  },
+  "bored": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.51,
+      "acc_stderr,none": 0.05024183937956911,
+      "acc_norm,none": 0.72,
+      "acc_norm_stderr,none": 0.045126085985421276
+    }
+  },
+  "fatigued": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.55,
+      "acc_stderr,none": 0.05,
+      "acc_norm,none": 0.72,
+      "acc_norm_stderr,none": 0.04512608598542127
+    }
+  },
+  "neutral": {
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.54,
+      "acc_stderr,none": 0.05009082659620333,
+      "acc_norm,none": 0.69,
+      "acc_norm_stderr,none": 0.04648231987117316
+    }
+  }
+}
