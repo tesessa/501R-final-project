@@ -1,0 +1,14 @@
+model_names: 
+  - meta-llama/Llama-3.1-8B-Instruct
+num_questions: 4
+max_tokens: 200
+temperature: 0.7
+output_dir: "test/"
+device: cuda
+
+# judge_model: gpt-4
+
+judge_model: gpt4  # or "gpt4"
+input_file: /home/tessa343/classes/501R-final-project/src/results/open_ended/responses_Llama-3.1-8B-Instruct.json
+output_file: /home/tessa343/classes/501R-final-project/src/results/open_ended/judged_responses.json
+batch_size: 10  # save after this amount of judgements

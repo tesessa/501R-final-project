@@ -1,0 +1,21 @@
+model_name: meta-llama/Llama-3.1-8B-Instruct # change this to use multiple models
+models:
+  llama_3_8B:
+    /home/tessa343/.cache/huggingface/hub/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/0e9e39f249a16976918f6564b8830bc894c89659
+  # llama_2_7B:
+  #   /home/tessa343/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08
+question_file: question_datasets/test_questions.json
+output_dir: results/emotional_evaluation
+output_file: results/test/{model_name}_{question_set_name}.json
+max_tokens: 200
+temperature: 0.7
+
+emotions:
+  - control
+  - focused
+
+
+judge_model: gpt4 
+input_judge_file: results/emotional_evaluation/responses_Llama-3.1-8B-Instruct_mmlu_questions.json
+output_judge_file: results/emotional_evaluation/judged_responses_mmlu.json
+batch_size: 10

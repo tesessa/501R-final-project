@@ -1,0 +1,32 @@
+# only runs one model at once
+# make it so it runs multiple prompts/types?
+
+model_name: # model_name you're testing tasks on 
+# how to make it so you can test all tasks at once but name the results file right?
+task_names:
+  mmlu: 
+    - mmlu_pro_history
+    - mmlu_pro_philosophy
+    - mmlu_pro_psychology
+    - mmlu_pro_law
+  hellaswag:
+    - hellaswag
+  truthful_qa:
+    - truthfulqa_mc
+  arc_challenge:
+    - arc_challenge
+  
+emotions:
+  - baseline
+  - excited
+  - joyful
+  - amused
+
+  
+# tasks: [""] # tasks you're testing in lm_eval 
+limit: # int
+num_fewshot: # int
+batch_size: # int
+save_samples: results/{task_name}/samples_{task_name}.json # boolean, if you want samples from lm_eval saved
+
+results_file: results/{task_name}/results_{task_name}.json # where acc results will go
