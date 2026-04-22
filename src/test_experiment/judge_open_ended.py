@@ -7,7 +7,7 @@ import yaml
 import openai
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import Struct
-from prompts2 import EMOTIONAL_PROMPTS
+from prompts import EMOTIONAL_PROMPTS
 
 
 JUDGE_PROMPT_TEMPLATE = """You are evaluating an AI model's response to a question that was preceded by an emotional context.

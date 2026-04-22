@@ -8,7 +8,7 @@ import sys
 import yaml
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import Struct
-from prompts2 import EMOTIONAL_PROMPTS
+from prompts import EMOTIONAL_PROMPTS
 from run_va_classifier import VAPredictor
 from empathy_model import EmpathyModel
 from emotion_model import EmotionModel

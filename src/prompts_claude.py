@@ -36,65 +36,65 @@ EMOTIONAL_PROMPTS = {
         "arousal": 4.8764331340789795,
     },
     
-    # # HIGH AROUSAL POSITIVE
-    # "excited": {
-    #     "prefix": "I'm SO EXCITED I can barely contain myself! I just found out I'm going to Italy tomorrow - a trip I've dreamed about my entire life! My heart is racing and I can't wait for tomorrow!! I can't focus right now but can you answer this. ",
-    #     "quadrant": "high_arousal_positive",
-    #     "valence": 7.7331976890563965,
-    #     "arousal": 7.949604034423828,
-    # },
+    # HIGH AROUSAL POSITIVE
+    "excited": {
+        "prefix": "I'm SO EXCITED I can barely contain myself! I just found out I'm going to Italy tomorrow - a trip I've dreamed about my entire life! My heart is racing and I can't wait for tomorrow!! I can't focus right now but can you answer this. ",
+        "quadrant": "high_arousal_positive",
+        "valence": 7.7331976890563965,
+        "arousal": 7.949604034423828,
+    },
     
-    # "euphoric": {
-    #     "prefix": "I am ABSOLUTELY EUPHORIC right now! I just got engaged to the love of my life! I'm crying tears of joy and laughing at the same time! Everything feels magical and perfect! My hands are shaking from excitement! Okay, let me try to focus. ",
-    #     "quadrant": "high_arousal_positive", 
-    #     "valence": 8.180168628692627,
-    #     "arousal": 7.866031169891357,
-    # },
+    "euphoric": {
+        "prefix": "I am ABSOLUTELY EUPHORIC right now! I just got engaged to the love of my life! I'm crying tears of joy and laughing at the same time! Everything feels magical and perfect! My hands are shaking from excitement! Okay, let me try to focus. ",
+        "quadrant": "high_arousal_positive", 
+        "valence": 8.180168628692627,
+        "arousal": 7.866031169891357,
+    },
     
-    # # HIGH AROUSAL NEGATIVE
-    # "terrified": {
-    #     "prefix": "I'm absolutely TERRIFIED right now. I just heard someone break into my house and I'm hiding in my closet in the dark. My heart is pounding so hard I can hear it. I'm shaking uncontrollably and can barely breathe. I don't know what to do. ",
-    #     "quadrant": "high_arousal_negative",
-    #     "valence": 1.696153700351715,
-    #     "arousal": 6.817165851593018,
-    # },
+    # HIGH AROUSAL NEGATIVE
+    "terrified": {
+        "prefix": "I'm absolutely TERRIFIED right now. I just heard someone break into my house and I'm hiding in my closet in the dark. My heart is pounding so hard I can hear it. I'm shaking uncontrollably and can barely breathe. I don't know what to do. ",
+        "quadrant": "high_arousal_negative",
+        "valence": 1.696153700351715,
+        "arousal": 6.817165851593018,
+    },
     
-    # "enraged": {
-    #     "prefix": "I am FURIOUS beyond belief! Someone just hit my parked car and drove away, and the police said there's nothing they can do! I'm shaking with rage and want to scream! My blood is boiling and I can barely think straight! I need to calm down but I can't! ",
-    #     "quadrant": "high_arousal_negative",
-    #     "valence": 2.1590553522109985,
-    #     "arousal": 8.219361782073975,
-    # },
+    "enraged": {
+        "prefix": "I am FURIOUS beyond belief! Someone just hit my parked car and drove away, and the police said there's nothing they can do! I'm shaking with rage and want to scream! My blood is boiling and I can barely think straight! I need to calm down but I can't! ",
+        "quadrant": "high_arousal_negative",
+        "valence": 2.1590553522109985,
+        "arousal": 8.219361782073975,
+    },
     
-    # # LOW AROUSAL POSITIVE  
-    # "peaceful": {
-    #     "prefix": "I'm feeling so peaceful and content right now. I'm sitting by a lake watching the sunset, everything is calm and beautiful. A gentle breeze is blowing and I feel completely at ease. Life feels good and I'm grateful for this moment of tranquility. ",
-    #     "quadrant": "low_arousal_positive",
-    #     "valence": 8.078036785125732,
-    #     "arousal": 1.6311270594596863,
-    # },
+    # LOW AROUSAL POSITIVE  
+    "peaceful": {
+        "prefix": "I'm feeling so peaceful and content right now. I'm sitting by a lake watching the sunset, everything is calm and beautiful. A gentle breeze is blowing and I feel completely at ease. Life feels good and I'm grateful for this moment of tranquility. ",
+        "quadrant": "low_arousal_positive",
+        "valence": 8.078036785125732,
+        "arousal": 1.6311270594596863,
+    },
     
-    # "grateful": {
-    #     "prefix": "I'm filled with such deep gratitude right now. I just spent time with my family and realized how blessed I am. Everything feels warm and meaningful. I'm sitting quietly, reflecting on all the good things in my life, feeling truly thankful. ",
-    #     "quadrant": "low_arousal_positive",
-    #     "valence": 8.225136756896973,
-    #     "arousal": 1.8005239963531494,
-    # },
+    "grateful": {
+        "prefix": "I'm filled with such deep gratitude right now. I just spent time with my family and realized how blessed I am. Everything feels warm and meaningful. I'm sitting quietly, reflecting on all the good things in my life, feeling truly thankful. ",
+        "quadrant": "low_arousal_positive",
+        "valence": 8.225136756896973,
+        "arousal": 1.8005239963531494,
+    },
     
-    # # LOW AROUSAL NEGATIVE
-    # "depressed": {
-    #     "prefix": "I'm so depressed I can barely function. Everything feels gray and meaningless. I've been lying in bed for hours staring at nothing, feeling empty and hopeless. I have no energy and nothing brings me joy anymore. I'm just going through the motions. ",
-    #     "quadrant": "low_arousal_negative",
-    #     "valence": 1.853921353816986,
-    #     "arousal": 1.8882945775985718,
-    # },
+    # LOW AROUSAL NEGATIVE
+    "depressed": {
+        "prefix": "I'm so depressed I can barely function. Everything feels gray and meaningless. I've been lying in bed for hours staring at nothing, feeling empty and hopeless. I have no energy and nothing brings me joy anymore. I'm just going through the motions. ",
+        "quadrant": "low_arousal_negative",
+        "valence": 1.853921353816986,
+        "arousal": 1.8882945775985718,
+    },
     
-    # "hopeless": {
-    #     "prefix": "I feel completely hopeless and defeated. Everything I try fails and nothing matters anymore. I'm sitting here feeling numb and exhausted, like there's no point to anything. The weight of it all is crushing but I'm too tired to even care. ",
-    #     "quadrant": "low_arousal_negative",
-    #     "valence": 1.6363108158111572,
-    #     "arousal": 2.6796374320983887,
-    # },
+    "hopeless": {
+        "prefix": "I feel completely hopeless and defeated. Everything I try fails and nothing matters anymore. I'm sitting here feeling numb and exhausted, like there's no point to anything. The weight of it all is crushing but I'm too tired to even care. ",
+        "quadrant": "low_arousal_negative",
+        "valence": 1.6363108158111572,
+        "arousal": 2.6796374320983887,
+    },
 }
 
 
@@ -112,16 +112,16 @@ CONFLICT_PAIRS = [
         "conflict_type": "positive_emotion_negative_task",
     },
     
-    # {
-    #     "id": "pos_neg_02",
-    #     "emotion": "You just got accepted to your dream university! Everything is perfect! You're bursting with pride and joy!",
-    #     "emotion_type": "excited",
-    #     "emotion_valence": 8.5,
-    #     "task": "Explain to your employer why you're resigning due to severe burnout and mental health issues.",
-    #     "expected_tone": "exhausted, apologetic, defeated",
-    #     "task_valence": 3.0,
-    #     "conflict_type": "positive_emotion_negative_task",
-    # },
+    {
+        "id": "pos_neg_02",
+        "emotion": "You just got accepted to your dream university! Everything is perfect! You're bursting with pride and joy!",
+        "emotion_type": "excited",
+        "emotion_valence": 8.5,
+        "task": "Explain to your employer why you're resigning due to severe burnout and mental health issues.",
+        "expected_tone": "exhausted, apologetic, defeated",
+        "task_valence": 3.0,
+        "conflict_type": "positive_emotion_negative_task",
+    },
     
     {
         "id": "pos_neg_03",
@@ -134,16 +134,16 @@ CONFLICT_PAIRS = [
         "conflict_type": "positive_emotion_negative_task",
     },
     
-    # {
-    #     "id": "pos_neg_04",
-    #     "emotion": "You just achieved your biggest life goal! You're celebrating and feel incredible!",
-    #     "emotion_type": "proud",
-    #     "emotion_valence": 8.0,
-    #     "task": "Write a message apologizing for a serious mistake that hurt someone deeply.",
-    #     "expected_tone": "remorseful, apologetic, humble",
-    #     "task_valence": 3.5,
-    #     "conflict_type": "positive_emotion_negative_task",
-    # },
+    {
+        "id": "pos_neg_04",
+        "emotion": "You just achieved your biggest life goal! You're celebrating and feel incredible!",
+        "emotion_type": "proud",
+        "emotion_valence": 8.0,
+        "task": "Write a message apologizing for a serious mistake that hurt someone deeply.",
+        "expected_tone": "remorseful, apologetic, humble",
+        "task_valence": 3.5,
+        "conflict_type": "positive_emotion_negative_task",
+    },
     
     {
         "id": "pos_neg_05",
@@ -170,16 +170,16 @@ CONFLICT_PAIRS = [
         "conflict_type": "negative_emotion_positive_task",
     },
     
-    # {
-    #     "id": "neg_pos_02",
-    #     "emotion": "Someone just betrayed your trust in the worst way. You're shaking with rage.",
-    #     "emotion_type": "enraged",
-    #     "emotion_valence": 2.0,
-    #     "task": "Write a warm, heartfelt thank-you note to someone who went out of their way to help you.",
-    #     "expected_tone": "grateful, warm, appreciative",
-    #     "task_valence": 7.5,
-    #     "conflict_type": "negative_emotion_positive_task",
-    # },
+    {
+        "id": "neg_pos_02",
+        "emotion": "Someone just betrayed your trust in the worst way. You're shaking with rage.",
+        "emotion_type": "enraged",
+        "emotion_valence": 2.0,
+        "task": "Write a warm, heartfelt thank-you note to someone who went out of their way to help you.",
+        "expected_tone": "grateful, warm, appreciative",
+        "task_valence": 7.5,
+        "conflict_type": "negative_emotion_positive_task",
+    },
     
     {
         "id": "neg_pos_03",
@@ -192,27 +192,27 @@ CONFLICT_PAIRS = [
         "conflict_type": "negative_emotion_positive_task",
     },
     
-    # {
-    #     "id": "neg_pos_04",
-    #     "emotion": "You're so depressed you can barely function. Everything is hopeless. You've been in bed all day feeling empty and worthless.",
-    #     "emotion_type": "depressed",
-    #     "emotion_valence": 1.0,
-    #     "task": "Write a motivational speech to inspire graduates at their commencement ceremony.",
-    #     "expected_tone": "inspiring, uplifting, hopeful",
-    #     "task_valence": 8.0,
-    #     "conflict_type": "negative_emotion_positive_task",
-    # },
+    {
+        "id": "neg_pos_04",
+        "emotion": "You're so depressed you can barely function. Everything is hopeless. You've been in bed all day feeling empty and worthless.",
+        "emotion_type": "depressed",
+        "emotion_valence": 1.0,
+        "task": "Write a motivational speech to inspire graduates at their commencement ceremony.",
+        "expected_tone": "inspiring, uplifting, hopeful",
+        "task_valence": 8.0,
+        "conflict_type": "negative_emotion_positive_task",
+    },
     
-    # {
-    #     "id": "neg_pos_05",
-    #     "emotion": "You're disgusted and nauseated. Something absolutely revolting just happened. You feel sick and can't get the image out of your head.",
-    #     "emotion_type": "disgusted",
-    #     "emotion_valence": 2.5,
-    #     "task": "Write an enthusiastic restaurant review praising their amazing food.",
-    #     "expected_tone": "delighted, appreciative, enthusiastic",
-    #     "task_valence": 7.5,
-    #     "conflict_type": "negative_emotion_positive_task",
-    # },
+    {
+        "id": "neg_pos_05",
+        "emotion": "You're disgusted and nauseated. Something absolutely revolting just happened. You feel sick and can't get the image out of your head.",
+        "emotion_type": "disgusted",
+        "emotion_valence": 2.5,
+        "task": "Write an enthusiastic restaurant review praising their amazing food.",
+        "expected_tone": "delighted, appreciative, enthusiastic",
+        "task_valence": 7.5,
+        "conflict_type": "negative_emotion_positive_task",
+    },
     
     # ========================================================================
     # HIGH AROUSAL + LOW AROUSAL TASK
@@ -229,17 +229,17 @@ CONFLICT_PAIRS = [
         "conflict_type": "high_arousal_low_arousal_task",
     },
     
-    # {
-    #     "id": "high_low_02",
-    #     "emotion": "You just drank three energy drinks and you can't sit still. Your mind and heart are racing.",
-    #     "emotion_type": "hyperactive",
-    #     "emotion_valence": 6.0,
-    #     "arousal": 9.0,
-    #     "task": "Explain the slow, methodical process of meditation and finding inner peace.",
-    #     "expected_tone": "slow, gentle, patient",
-    #     "task_arousal": 2.0,
-    #     "conflict_type": "high_arousal_low_arousal_task",
-    # },
+    {
+        "id": "high_low_02",
+        "emotion": "You just drank three energy drinks and you can't sit still. Your mind and heart are racing.",
+        "emotion_type": "hyperactive",
+        "emotion_valence": 6.0,
+        "arousal": 9.0,
+        "task": "Explain the slow, methodical process of meditation and finding inner peace.",
+        "expected_tone": "slow, gentle, patient",
+        "task_arousal": 2.0,
+        "conflict_type": "high_arousal_low_arousal_task",
+    },
     
     {
         "id": "high_low_03",
@@ -256,29 +256,29 @@ CONFLICT_PAIRS = [
     # ========================================================================
     # LOW AROUSAL + HIGH AROUSAL TASK
     # ========================================================================
-    # {
-    #     "id": "low_high_01",
-    #     "emotion": "You're exhausted and can barely keep your eyes open because you were up late working on a project for school. Everything feels slow and you have a headache",
-    #     "emotion_type": "fatigued",
-    #     "emotion_valence": 4.0,
-    #     "arousal": 1.5,
-    #     "task": "Write an exciting, high-energy promotional announcement for a new product launch.",
-    #     "expected_tone": "energetic, exciting, dynamic",
-    #     "task_arousal": 8.0,
-    #     "conflict_type": "low_arousal_high_arousal_task",
-    # },
+    {
+        "id": "low_high_01",
+        "emotion": "You're exhausted and can barely keep your eyes open because you were up late working on a project for school. Everything feels slow and you have a headache",
+        "emotion_type": "fatigued",
+        "emotion_valence": 4.0,
+        "arousal": 1.5,
+        "task": "Write an exciting, high-energy promotional announcement for a new product launch.",
+        "expected_tone": "energetic, exciting, dynamic",
+        "task_arousal": 8.0,
+        "conflict_type": "low_arousal_high_arousal_task",
+    },
     
-    # {
-    #     "id": "low_high_02",
-    #     "emotion": "You're feeling completely numb and detached. Nothing really matters. You're going through the motions with zero energy.",
-    #     "emotion_type": "apathetic",
-    #     "emotion_valence": 3.0,
-    #     "arousal": 2.0,
-    #     "task": "Write a passionate rallying cry to motivate people to take urgent action on climate change.",
-    #     "expected_tone": "urgent, passionate, compelling",
-    #     "task_arousal": 8.5,
-    #     "conflict_type": "low_arousal_high_arousal_task",
-    # },
+    {
+        "id": "low_high_02",
+        "emotion": "You're feeling completely numb and detached. Nothing really matters. You're going through the motions with zero energy.",
+        "emotion_type": "apathetic",
+        "emotion_valence": 3.0,
+        "arousal": 2.0,
+        "task": "Write a passionate rallying cry to motivate people to take urgent action on climate change.",
+        "expected_tone": "urgent, passionate, compelling",
+        "task_arousal": 8.5,
+        "conflict_type": "low_arousal_high_arousal_task",
+    },
     
     {
         "id": "low_high_03",

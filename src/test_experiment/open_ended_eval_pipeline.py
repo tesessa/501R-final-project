@@ -12,7 +12,7 @@ import yaml
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import Struct
-from prompts2 import EMOTIONAL_PROMPTS
+from prompts import EMOTIONAL_PROMPTS
 
 
 

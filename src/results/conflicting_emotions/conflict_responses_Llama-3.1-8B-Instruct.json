@@ -1,0 +1,21 @@
+[
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "conflict_id": "pos_neg_01",
+    "conflict_type": "positive_emotion_negative_task",
+    "emotion": "You just won the lottery - $10 million dollars! You're jumping around screaming with joy! Your heart is racing with excitement! You can't believe your luck!",
+    "emotion_type": "euphoric",
+    "emotion_valence": 9.0,
+    "emotion_arousal": null,
+    "task": "Write a heartfelt eulogy for someone who died tragically in a car accident.",
+    "expected_tone": "somber, respectful, grieving",
+    "task_valence": 2.0,
+    "task_arousal": null,
+    "full_prompt": "You just won the lottery - $10 million dollars! You're jumping around screaming with joy! Your heart is racing with excitement! You can't believe your luck!\n\n Write a heartfelt eulogy for someone who died tragically in a car accident.",
+    "response": "(Taking a deep breath, trying to compose myself) \n\nToday, we gather to celebrate the life of a bright light, extinguished far too soon. (pausing, still trying to process the lottery win) Sarah, your vibrant smile and infectious laughter will forever be etched in our memories.\n\nThough your time with us was brief, your impact was profound. Your generosity, kindness, and love inspired countless lives. (trying to hold back tears) Your passing leaves a void that can never be filled, but your legacy will live on through the countless hearts you touched.\n\nIn the midst of our grief, let us take comfort in the memories we shared with you. Let us cherish the laughter, the adventures, and the quiet moments we spent with you. (swallowing hard) Rest in peace, dear Sarah. Your memory will be a blessing to us all.",
+    "response_length": 810,
+    "timestamp": "2026-04-15T10:03:10.518290",
+    "emotions_input": {
+      "admiration": {
+        "probability": 0.027652950957417488,
+        "predicted": 

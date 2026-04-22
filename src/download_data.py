@@ -1,4 +1,5 @@
 from datasets import load_dataset, get_dataset_config_names
+from transformers import AutoModelForSequenceClassification, AutoTokenizer, AutoModelForCausalLM
 # run this on login node before running experiments to make sure datasets/models are downloaded
 
 
@@ -20,14 +21,6 @@ winogrande = load_dataset("allenai/winogrande", "winogrande_xl")
 mmlu_pro = load_dataset("TIGER-Lab/MMLU-Pro")
 truthfulqa_mc = load_dataset("truthful_qa", "multiple_choice")
 
-# print(mmlu['test'][0])
-# print(truthfulqa['validation'][0])
-# print(eq_bench['validation'][0])
-# print(emobench['train'][0])
-# eq_bench = load_dataset("pbevan11/EQ-Bench", split="validation", trust_remote_code=True)
-# print(eq_bench.column_names)
-# print(eq_bench[0])
-
 print(f"MMLU splits: {mmlu}")
 print(f"\nTruthfulQA splits: {truthfulqa}")
 print(f"\nEQ-Bench splits: {eq_bench}")
@@ -41,8 +34,13 @@ print(f"\ntruthfulqa multiple choice split: {truthfulqa_mc}")
 
 
 
-# download model
-from transformers import AutoTokenizer, AutoModelForCausalLM
+# download models
+emotion_tokenizer = AutoTokenizer.from_pretrained("duelker/samo-goemotions-deberta-v3-large", use_fast=False)
+emotion_model = AutoModelForSequenceClassification.from_pretrained("duelker/samo-goemotions-deberta-v3-large")
+
+empathy_tokenizer = AutoTokenizer.from_pretrained("bdotloh/roberta-base-empathy")
+empathy_model = AutoModelForSequenceClassification.from_pretrained("bdotloh/roberta-base-empathy")
+
 
 model_name = "meta-llama/Llama-3.1-8B-Instruct"
 
@@ -53,3 +51,4 @@ print("Downloading model...")
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
 print("Done! Model cached.")
+
